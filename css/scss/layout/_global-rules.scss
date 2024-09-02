@@ -1,0 +1,34 @@
+@use '../variables/colors' as *;
+
+* {
+  box-sizing: border-box !important;
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+  aspect-ratio: auto 1314 / 957;
+}
+
+#particles-js {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+.header {
+  font-family: $font-secondary;
+  text-align: center;
+  padding-bottom: 30px;
+
+  .title {
+    color: $color-primary;
+    font-size: 34px;
+  }
+
+  .para {
+    color: #b8651d;
+  }
+}
