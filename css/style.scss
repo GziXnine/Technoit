@@ -562,6 +562,10 @@ header {
         -moz-transform: scale(1.1);
         -ms-transform: scale(1.1);
         -o-transform: scale(1.1);
+
+        li svg {
+          color: $color-primary;
+        }
       }
 
       h2 {
@@ -584,6 +588,64 @@ header {
             }
           }
         }
+      }
+
+      button {
+        width: fit-content;
+        padding: 10px 25px;
+        margin: 8px auto;
+      }
+    }
+  }
+}
+
+// ! Start Contact US
+.contact-us {
+  padding: 100px 0;
+
+  .container {
+    padding: 0 40px;
+  }
+
+  .form {
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 1px 20px $box-shadow-color;
+    transition: calc($transition_time);
+    -webkit-transition: calc($transition_time);
+    -moz-transition: calc($transition_time);
+    -ms-transition: calc($transition_time);
+    -o-transition: calc($transition_time);
+
+    &:hover {
+      transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
+    }
+
+    h2 {
+      font-size: 30px;
+      padding: 0px 10px 20px;
+    }
+
+    form {
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+        border: 1px solid $color-primary;
       }
 
       button {

@@ -619,6 +619,9 @@ header nav [id=darkmode-button]:hover {
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
 }
+.pricing .row .card:hover li svg {
+  color: #025add;
+}
 .pricing .row .card h2 {
   font-size: 30px;
   padding: 0px 10px 20px;
@@ -634,6 +637,56 @@ header nav [id=darkmode-button]:hover {
   font-weight: 100;
 }
 .pricing .row .card button {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 25px;
+  margin: 8px auto;
+}
+
+.contact-us {
+  padding: 100px 0;
+}
+.contact-us .container {
+  padding: 0 40px;
+}
+.contact-us .form {
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 0 1px 20px rgba(82, 90, 101, 0.1);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.contact-us .form:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.contact-us .form h2 {
+  font-size: 30px;
+  padding: 0px 10px 20px;
+}
+.contact-us .form form input,
+.contact-us .form form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border: 1px solid #025add;
+}
+.contact-us .form form button {
   width: -moz-fit-content;
   width: fit-content;
   padding: 10px 25px;

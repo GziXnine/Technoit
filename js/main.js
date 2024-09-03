@@ -92,3 +92,66 @@ img.forEach((ele) => {
     popUp.appendChild(popUpImg);
   });
 });
+
+// ! Make a Validation To The Form
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("contact-form");
+
+  form.addEventListener(
+    "submit",
+    function (event) {
+      event.preventDefault();
+      event.stopPropagation();
+
+      form.classList.add("was-validated");
+
+      let allValid = true;
+
+      Array.from(form.elements).forEach((element) => {
+        if (element.required && element.tagName === "INPUT") {
+          if (element.checkValidity()) {
+            element.classList.add("is-valid");
+            element.classList.remove("is-invalid");
+            element.nextElementSibling.style.display = "none"; // Hide error message
+          } else {
+            element.classList.add("is-invalid");
+            element.classList.remove("is-valid");
+            element.nextElementSibling.style.display = "block"; // Show error message
+            allValid = false;
+          }
+        }
+      });
+
+      if (allValid) {
+        Array.from(form.elements).forEach((element) => {
+          if (element.type !== "submit") {
+            element.value = "";
+            element.classList.remove("is-valid", "is-invalid");
+            window.location.reload();
+          }
+        });
+        alert("Form submitted successfully!");
+      }
+    },
+    false
+  );
+
+  // TODO Real-time validation as the user types or changes input
+  Array.from(form.elements).forEach((element) => {
+    if (element.tagName === "INPUT") {
+      element.addEventListener("input", function () {
+        if (element.required) {
+          if (element.checkValidity()) {
+            element.classList.add("is-valid");
+            element.classList.remove("is-invalid");
+            element.nextElementSibling.style.display = "none";
+          } else {
+            element.classList.add("is-invalid");
+            element.classList.remove("is-valid");
+            element.nextElementSibling.style.display = "block";
+          }
+        }
+      });
+    }
+  });
+});
