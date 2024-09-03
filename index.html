@@ -33,7 +33,7 @@
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon">
+          <span>
             <i class="fa-solid fa-sliders"></i>
           </span>
         </button>
@@ -43,10 +43,10 @@
               <a class="nav-link" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
+              <a class="nav-link" href="#protofolio">Portfolio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Testimonials</a>
@@ -60,8 +60,8 @@
                 Menu
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">About</a></li>
-                <li><a class="dropdown-item" href="#">Pricing</a></li>
+                <li><a class="dropdown-item" href="#about-us">About</a></li>
+                <li><a class="dropdown-item" href="#pricing">Pricing</a></li>
                 <li><a class="dropdown-item" href="#">FAQs</a></li>
                 <li><a class="dropdown-item" href="#">Terms & Conditions</a></li>
                 <li><a class="dropdown-item" href="#">Privacy Policy</a></li>
@@ -73,7 +73,7 @@
               <a class="nav-link" href="#">News</a>
             </li>
           </ul>
-          <button type="button" class="btn btn-primary rounded-pill">Get Quotes</button>
+          <button type="button" class="btn btn-primary rounded-pill get-quotes">Get Quotes</button>
           <button id="darkmode-button" class="btn rounded-circle">
             <i class="fa-solid fa-moon"></i>
           </button>
@@ -84,148 +84,274 @@
   </header>
   <!-- ! End Header -->
   <!-- ! Start Landing -->
-  <div class="landing">
-    <div class="overlay light"></div>
-    <div class="hero">
-      <img src="images/c30966a9e45384178fafa56353728b73-removebg-preview.png" alt="">
-    </div>
-    <div id="particles-js">
-      <canvas width="1170" height="2532" style="width: 100%; height: 100%;"></canvas>
-    </div>
-    <div class="container letters">
-      <div class="row gy-5">
-        <div class="col-lg-7 offset-lg-5 dark-bg order-lg-1 d-flex flex-column justify-content-start text-left caption">
-          <h2 data-aos="fade-up" class="">Delivering Superior Services
-            <span>IT Solutions</span>
-            <span class="circle" data-aos="fade-right" data-aos-delay="800">.</span>
-          </h2>
-          <p data-aos="fade-up" data-aos-delay="400" class="">You can easily change any design to
-            your
-            own. It is also highly customizable SEO friendly template.</p>
-          <div class="social aos-init" data-aos="fade-up" data-aos-delay="600">
-            <a href=""><i class="fa-brands fa-twitter"></i></a>
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-          </div>
-          <div class="d-flex justify-content-start">
-            <button href="#contact" class="btn btn-primary rounded-pill" data-aos="fade-up" data-aos-delay="800">Get
-              Quotes</button>
-            <button href="#services" class="btn btn-primary rounded-pill" data-aos="fade-up" data-aos-delay="1000">Get
-              Started</button>
+  <main>
+    <div class="landing">
+      <div class="overlay light"></div>
+      <div class="hero">
+        <img src="images/c30966a9e45384178fafa56353728b73-removebg-preview.png" alt="">
+      </div>
+      <div id="particles-js">
+        <canvas width="1170" height="2532" style="width: 100%; height: 100%;"></canvas>
+      </div>
+      <div class="container letters">
+        <div class="row gy-5">
+          <div
+            class="col-lg-7 offset-lg-5 dark-bg order-lg-1 d-flex flex-column justify-content-start text-left caption">
+            <h2 data-aos="fade-up" class="">Delivering Superior Services
+              <span>IT Solutions</span>
+              <span class="circle" data-aos="fade-right" data-aos-delay="800">.</span>
+            </h2>
+            <p data-aos="fade-up" data-aos-delay="400" class="">You can easily change any design to
+              your
+              own. It is also highly customizable SEO friendly template.</p>
+            <div class="social aos-init" data-aos="fade-up" data-aos-delay="600">
+              <a href="https://github.com/GziXnine"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.linkedin.com/in/1ahmed-allam/"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="d-flex justify-content-start buttons">
+              <button style="--ripples: 12;" href="#contact" class="btn-custom" data-aos="fade-up"
+                data-aos-delay="800">Get
+                Quotes</button>
+              <button style="--ripples: 12;" href="#services" class="btn-custom" data-aos="fade-up"
+                data-aos-delay="1000">Get
+                Started</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- ! End Landing -->
-  <!-- !  Start Services -->
-  <div class="services">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-12">
+    <!-- ! End Landing -->
+    <!-- ! Start Services -->
+    <div class="services py-5" id="services">
+      <div class="container">
+        <div>
           <img src="images/service-design.svg" alt="">
           <h4>Application Design</h4>
           <p>Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
+        <div>
           <img src="images/service-hosting.svg" alt="">
           <h4>Web Hosting</h4>
           <p>Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
+        <div>
           <img src="images/service-social.svg" alt="">
-          <h4>Socila Media</h4>
+          <h4>Social Media</h4>
           <p>Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
+        <div>
           <img src="images/service-seo.svg" alt="">
           <h4>SEO Optimization</h4>
           <p>Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
+        <div>
           <img src="images/service-cloud.svg" alt="">
           <h4>Cloud Server</h4>
           <p>Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
+        <div>
           <img src="images/service-secure.svg" alt="">
           <h4>Data Security</h4>
           <p>Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
     </div>
-  </div>
-  <!-- !  End Services -->
-  <!-- ! Start About Us -->
-  <div class="about-us">
-    <div class="header">
-      <div class="title">Why Choose Us</div>
-      <p class="para">Lorem ipsum dolor sit amet</p>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-sm-12 left">
-          <div class="row">
-            <div class="col-lg-12 box">
-              <div class="text">
-                <h4>Experience</h4>
-                <p>Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+    <!-- ! End Services -->
+    <!-- ! Start About Us -->
+    <div class="about-us" id="about-us">
+      <div class="header">
+        <div class="title">Why Choose Us</div>
+        <p class="para">Lorem ipsum dolor sit amet</p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-sm-12 left">
+            <div class="row">
+              <div class="col-lg-12 box">
+                <div class="text">
+                  <h4>Experience</h4>
+                  <p>Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                </div>
+                <img src="images/icon-1.svg" alt="">
               </div>
-              <img src="images/icon-1.svg" alt="">
-            </div>
-            <div class="col-lg-12 box">
-              <div class="text">
-                <h4>Products</h4>
-                <p>Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+              <div class="col-lg-12 box">
+                <div class="text">
+                  <h4>Products</h4>
+                  <p>Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                </div>
+                <img src="images/icon-2.svg" alt="">
               </div>
-              <img src="images/icon-2.svg" alt="">
-            </div>
-            <div class="col-lg-12 box">
-              <div class="text">
-                <h4>Approach</h4>
-                <p>Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+              <div class="col-lg-12 box">
+                <div class="text">
+                  <h4>Approach</h4>
+                  <p>Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                </div>
+                <img src="images/icon-3.svg" alt="">
               </div>
-              <img src="images/icon-3.svg" alt="">
             </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-sm-12 center">
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <img src="images/features.jpg" alt="" class="middle">
+          <div class="col-lg-4 col-sm-12 center">
+            <div class="row">
+              <div class="col-lg-4 col-sm-12">
+                <img src="images/features.jpg" alt="" class="middle">
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-sm-12 right">
-          <div class="row">
-            <div class="col-lg-12 box">
-              <img src="images/icon-4.svg" alt="">
-              <div class="text">
-                <h4>Pricing</h4>
-                <p>Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          <div class="col-lg-4 col-sm-12 right">
+            <div class="row">
+              <div class="col-lg-12 box">
+                <img src="images/icon-4.svg" alt="">
+                <div class="text">
+                  <h4>Pricing</h4>
+                  <p>Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                </div>
               </div>
-            </div>
-            <div class="col-lg-12 box">
-              <img src="images/icon-5.svg" alt="">
-              <div class="text">
-                <h4>Delivery</h4>
-                <p>Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+              <div class="col-lg-12 box">
+                <img src="images/icon-5.svg" alt="">
+                <div class="text">
+                  <h4>Delivery</h4>
+                  <p>Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                </div>
               </div>
-            </div>
-            <div class="col-lg-12 box">
-              <img src="images/icon-6.svg" alt="">
-              <div class="text">
-                <h4>Support</h4>
-                <p>Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+              <div class="col-lg-12 box">
+                <img src="images/icon-6.svg" alt="">
+                <div class="text">
+                  <h4>Support</h4>
+                  <p>Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- ! End About Us -->
+    <!-- ! End About Us -->
+    <!-- ! Start Protfolio -->
+    <div class="protofolio" id="protofolio">
+      <div class="header">
+        <div class="title">Our Protfolio</div>
+        <p class="para">Lorem ipsum dolor sit amet</p>
+      </div>
+      <div class="container">
+        <div class="buttons">
+          <button type="button" data-cat="all" class="btn btn-primary rounded-5 rounded-end active">All</button>
+          <button type="button" data-cat="app-des" class="btn btn-primary rounded-0">Design</button>
+          <button type="button" data-cat="app-dev" class="btn btn-primary rounded-0">Development</button>
+          <button type="button" data-cat="brand" class="btn btn-primary rounded-0">Branding</button>
+          <button type="button" data-cat="it-sol" class="btn btn-primary rounded-5 rounded-start">It</button>
+        </div>
+        <div class="photos">
+          <div class="container">
+            <div class="photo all app-des">
+              <img src="images/product-1.jpg" alt="">
+            </div>
+            <div class="photo all app-dev">
+              <img src="images/product-2.jpg" alt="">
+            </div>
+            <div class="photo all brand">
+              <img src="images/product-3.jpg" alt="">
+            </div>
+            <div class="photo all it-sol">
+              <img src="images/product-4.jpg" alt="">
+            </div>
+            <div class="photo all app-des">
+              <img src="images/product-5.jpg" alt="">
+            </div>
+            <div class="photo all brand">
+              <img src="images/product-6.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ! End Protfolio -->
+    <!-- ! Start Pricing Plan -->
+    <div class="pricing" id="pricing">
+      <div class="header">
+        <div class="title">Pricing Plans</div>
+        <p class="para">Lorem ipsum dolor sit amet</p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card text-center">
+              <div class="title">
+                <h2>Basic</h2>
+              </div>
+              <div class="price">
+                <h4><sup>$</sup>25</h4>
+              </div>
+              <div class="option">
+                <ul class="list-unstyled">
+                  <li><i class="fa-regular fa-circle-check" aria-hidden="true"></i> Unlimited GB Space</li>
+                  <li><i class="fa-regular fa-circle-check" aria-hidden="true"></i> 30 Domain Names</li>
+                  <li><i class="fa-regular fa-circle-check" aria-hidden="true"></i> Free SSL</li>
+                  <li><i class="fa-regular fa-circle-check" aria-hidden="true"></i> Daily Backup</li>
+                  <li><i class="fa-regular fa-circle-check" aria-hidden="true"></i> Free Templates</li>
+                  <li><i class="fa-regular fa-circle-check" aria-hidden="true"></i> Free Email</li>
+                  <li><i class="fa-regular fa-circle-check" aria-hidden="true"></i> 10 Databases</li>
+                  <li><i class="fa-regular fa-circle-check" aria-hidden="true"></i> Unlimited Email Address</li>
+                  <li><i class="fa-regular fa-circle-check" aria-hidden="true"></i> Live Support</li>
+                </ul>
+              </div>
+              <button type="button" class="btn btn-primary rounded-pill">Order Now</button>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card text-center">
+              <div class="title">
+                <h2>Standard</h2>
+              </div>
+              <div class="price">
+                <h4><sup>$</sup>50</h4>
+              </div>
+              <div class="option">
+                <ul class="list-unstyled">
+                  <li><i class="fa-regular fa-circle-check" aria-hidden="true"></i> Unlimited GB Space</li>
+                  <li><i class="fa-regular fa-circle-check" aria-hidden="true"></i> 30 Domain Names</li>
+                  <li><i class="fa-regular fa-circle-check" aria-hidden="true"></i> Free SSL</li>
+                  <li><i class="fa-regular fa-circle-check" aria-hidden="true"></i> Daily Backup</li>
+                  <li><i class="fa-regular fa-circle-check" aria-hidden="true"></i> Free Templates</li>
+                  <li><i class="fa-regular fa-circle-check" aria-hidden="true"></i> Free Email</li>
+                  <li><i class="fa-regular fa-circle-check" aria-hidden="true"></i> 10 Databases</li>
+                  <li><i class="fa-regular fa-circle-check" aria-hidden="true"></i> Unlimited Email Address</li>
+                  <li><i class="fa-regular fa-circle-check" aria-hidden="true"></i> Live Support</li>
+                </ul>
+              </div>
+              <button type="button" class="btn btn-primary rounded-pill">Order Now</button>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card text-center">
+              <div class="title">
+                <h2>Premium</h2>
+              </div>
+              <div class="price">
+                <h4><sup>$</sup>100</h4>
+              </div>
+              <div class="option">
+                <ul class="list-unstyled">
+                  <li><i class="fa-regular fa-circle-check" aria-hidden="true"></i> Unlimited GB Space</li>
+                  <li><i class="fa-regular fa-circle-check" aria-hidden="true"></i> 30 Domain Names</li>
+                  <li><i class="fa-regular fa-circle-check" aria-hidden="true"></i> Free SSL</li>
+                  <li><i class="fa-regular fa-circle-check" aria-hidden="true"></i> Daily Backup</li>
+                  <li><i class="fa-regular fa-circle-check" aria-hidden="true"></i> Free Templates</li>
+                  <li><i class="fa-regular fa-circle-check" aria-hidden="true"></i> Free Email</li>
+                  <li><i class="fa-regular fa-circle-check" aria-hidden="true"></i> 10 Databases</li>
+                  <li><i class="fa-regular fa-circle-check" aria-hidden="true"></i> Unlimited Email Address</li>
+                  <li><i class="fa-regular fa-circle-check" aria-hidden="true"></i> Live Support</li>
+                </ul>
+              </div>
+              <button type="button" class="btn btn-primary rounded-pill">Order Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ! End Pricing Plan -->
+  </main>
   <!---------------------------------------------------------------------------->
   <script src="js/bootstrap.bundle.min.js"></script>
   <!-- ! This Render Icon As SVG... -->

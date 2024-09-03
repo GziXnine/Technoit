@@ -26,19 +26,69 @@ button.addEventListener("click", () => {
 window.addEventListener("scroll", () => {
   const links = document.querySelectorAll(".navbar-nav li a");
   const btn = document.querySelector("#darkmode-button");
+  const btn1 = document.querySelector(".fa-sliders");
   if (window.scrollY >= 100) {
     header.classList.remove("bg-transparent");
     header.classList.add("bg-white");
     links.forEach((link) => {
       link.style.color = "#3a3a3a";
     });
-    btn.style.cssText = `border: 1px solid #3a3a3a`;
+    btn1.style.cssText = `color: black !important`;
   } else {
     header.classList.remove("bg-white");
     header.classList.add("bg-transparent");
     links.forEach((link) => {
       link.style.color = "white";
     });
-    btn.style.cssText = `border: none`;
+    btn1.style.cssText = `color: white !important`;
   }
+});
+
+// ! Protofolio
+let buttons = document.querySelectorAll(".protofolio .buttons button");
+let photos = document.querySelectorAll(".protofolio .photos .photo");
+
+buttons.forEach((button) => {
+  button.addEventListener("click", (e) => {
+    buttons.forEach((btn) => {
+      btn.classList.remove("active");
+    });
+    e.target.classList.add("active");
+
+    let target = e.target.getAttribute("data-cat");
+    photos.forEach((photo) => {
+      photo.style.opacity = "0";
+      photo.style.display = "none";
+      if (photo.classList.contains(target)) {
+        photo.style.display = "block";
+        setTimeout(() => {
+          photo.style.opacity = "1";
+        }, 150);
+      }
+    });
+  });
+});
+
+// ! Make a PopUp To A Protofolio Photos.
+let img = document.querySelectorAll(".protofolio img");
+img.forEach((ele) => {
+  ele.addEventListener("click", (e) => {
+    let div = document.createElement("div");
+    div.className = "popup-overlay";
+
+    let popUp = document.createElement("div");
+    popUp.className = "popUp";
+
+    let popUpImg = document.createElement("img");
+    popUpImg.src = ele.src;
+
+    div.addEventListener("click", function () {
+      popUp.remove();
+      div.remove();
+    });
+
+    document.body.appendChild(popUp);
+    document.body.appendChild(div);
+    popUp.appendChild(popUpImg);
+  });
 });

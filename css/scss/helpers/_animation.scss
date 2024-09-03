@@ -1,0 +1,77 @@
+/** @format */
+
+.landing {
+  .letters {
+    .btn-custom {
+      --button-bg: #025add;
+      font-size: 14px;
+      margin-right: 20px;
+      margin-top: 20px;
+      padding: 10px 20px;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      border: 1px solid transparent;
+      border-radius: 36px;
+      -webkit-border-radius: 36px;
+      -moz-border-radius: 36px;
+      -ms-border-radius: 36px;
+      -o-border-radius: 36px;
+      background: var(--button-bg);
+      color: var(--button-fg, inherit);
+
+      @media (prefers-reduced-motion: no-preference) {
+        --_percentage: calc(100% / var(--ripples, 1));
+        --ripple-speed: 2s;
+        background: linear-gradient(var(--button-bg), var(--button-bg))
+            padding-box,
+          repeating-conic-gradient(
+              from var(--gradient-angle),
+              transparent,
+              var(--button-bg) calc(var(--_percentage) * 0.5),
+              transparent var(--_percentage)
+            )
+            border-box;
+        animation: var(--ripple-speed) ripple linear infinite;
+
+        &::before {
+          content: "";
+          position: absolute;
+          inset-inline-start: 50%;
+          inset-block-start: 50%;
+          translate: -50% -50%;
+          width: 150%;
+          aspect-ratio: 1;
+          background: linear-gradient(
+            transparent,
+            hsla(0 0% 100% / 0.1),
+            transparent
+          );
+          animation: calc((var(--ripple-speed) * 3) / var(--ripples)) shimmer
+            linear infinite;
+          pointer-events: none;
+        }
+
+        @keyframes ripple {
+          to {
+            --gradient-angle: 360deg;
+          }
+        }
+
+        @keyframes shimmer {
+          to {
+            rotate: 360deg;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @property --gradient-angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+}
