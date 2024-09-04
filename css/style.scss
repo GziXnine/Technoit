@@ -542,7 +542,7 @@ header {
 
 // ! Start Pricing Plan
 .pricing {
-  padding: 100px 0 0;
+  padding: 100px 0 40px;
 
   .container {
     padding: 0 40px;
@@ -571,8 +571,13 @@ header {
         -ms-transform: scale(1.1);
         -o-transform: scale(1.1);
 
-        li svg {
-          color: $color-primary;
+        li {
+          .fa-circle-check {
+            color: $color-primary;
+          }
+          .fa-circle-xmark {
+            color: red;
+          }
         }
       }
 
