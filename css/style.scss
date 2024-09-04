@@ -612,8 +612,6 @@ header {
   padding: 90px 0;
 
   .container {
-    padding: 0 70px;
-
     .swiper {
       position: relative;
       width: 100%;
@@ -636,6 +634,12 @@ header {
           -moz-transition: calc($transition_time);
           -ms-transition: calc($transition_time);
           -o-transition: calc($transition_time);
+
+          // @media (max-width: 767px) {
+          //   flex-direction: column;
+          //   min-width: 100%;
+          //   display: block;
+          // }
 
           &:hover {
             transform: scale(1.1);

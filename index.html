@@ -359,9 +359,9 @@
           <p class="para">Lorem ipsum dolor sit amet</p>
         </div>
         <div
-          class="slides-3 swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden aos-init aos-animate"
+          class="swiper slides-3 swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden aos-init aos-animate"
           data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper" id="swiper-wrapper-668b60f27b7844c2" aria-live="off"
+          <div class="swiper-wrapper" aria-live="off"
             style="transform: translate3d(-3904px, 0px, 0px); transition-duration: 0ms;">
             <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" role="group"
               aria-label="4 / 4" style="width: 936px; margin-right: 40px;" data-swiper-slide-index="3">
@@ -390,6 +390,8 @@
                 </div>
               </div>
             </div>
+
+            <!-- Testimonial Item 1 -->
             <div class="swiper-slide swiper-slide-duplicate-next" role="group" aria-label="1 / 4"
               style="width: 936px; margin-right: 40px;" data-swiper-slide-index="0">
               <div class="testimonial-wrap">
@@ -416,7 +418,9 @@
                   </p>
                 </div>
               </div>
-            </div><!-- TODO End testimonial item -->
+            </div>
+
+            <!-- Testimonial Item 2 -->
             <div class="swiper-slide" role="group" aria-label="2 / 4" style="width: 936px; margin-right: 40px;"
               data-swiper-slide-index="1">
               <div class="testimonial-wrap">
@@ -443,7 +447,9 @@
                   </p>
                 </div>
               </div>
-            </div><!-- TODO End testimonial item -->
+            </div>
+
+            <!-- Testimonial Item 3 -->
             <div class="swiper-slide swiper-slide-prev" role="group" aria-label="3 / 4"
               style="width: 936px; margin-right: 40px;" data-swiper-slide-index="2">
               <div class="testimonial-wrap">
@@ -470,63 +476,10 @@
                   </p>
                 </div>
               </div>
-            </div><!-- TODO End testimonial item -->
-            <div class="swiper-slide swiper-slide-active" role="group" aria-label="4 / 4"
-              style="width: 936px; margin-right: 40px;" data-swiper-slide-index="3">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <div class="d-flex align-items-center info-box">
-                    <img src="images/testimonial-4.jpg" class="testimonial-img flex-shrink-0" alt="">
-                    <div>
-                      <h3>Fizzi Brandon</h3>
-                      <h4>Freelancer</h4>
-                      <div class="stars">
-                        <i class="filled fas fa-star"></i>
-                        <i class="filled fas fa-star"></i>
-                        <i class="filled fas fa-star"></i>
-                        <i class="filled fas fa-star"></i>
-                        <i class="filled fas fa-star"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <p>
-                    <i class="fa-solid fa-quote-left"></i>
-                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
-                    Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam.
-                    <i class="fa-solid fa-quote-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- TODO End testimonial item -->
-            <div class="swiper-slide swiper-slide-duplicate swiper-slide-next" role="group" aria-label="1 / 4"
-              style="width: 936px; margin-right: 40px;" data-swiper-slide-index="0">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <div class="d-flex align-items-center info-box">
-                    <img src="images/testimonial-1.jpg" class="testimonial-img flex-shrink-0" alt="">
-                    <div>
-                      <h3>Jhone Doe</h3>
-                      <h4>CFO</h4>
-                      <div class="stars">
-                        <i class="filled fas fa-star"></i>
-                        <i class="filled fas fa-star"></i>
-                        <i class="filled fas fa-star"></i>
-                        <i class="filled far fa-star"></i>
-                        <i class="filled far fa-star"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <p>
-                    <i class="fa-solid fa-quote-left"></i>
-                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
-                    Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam.
-                    <i class="fa-solid fa-quote-right"></i>
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
+      </div>
     </section>
     <!-- ! End Testimonials -->
     <!-- ! Start Status -->
@@ -1024,9 +977,11 @@
                 <p>Don't miss to subscribe to our new feeds, kindly fill the form below.</p>
               </div>
               <div class="subscribe-form">
-                <form action="#">
-                  <input type="text" placeholder="Email Address">
-                  <button><i class="fa-brands fa-telegram"></i></button>
+                <form action="#" id="email-form">
+                  <input type="text" placeholder="Email Address" id="email-input">
+                  <button id="submit-button">
+                    <i class="fa-brands fa-telegram"></i>
+                  </button>
                 </form>
               </div>
             </div>

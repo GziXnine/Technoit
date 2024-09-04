@@ -210,6 +210,24 @@ document.addEventListener("DOMContentLoaded", function () {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 40,
+      },
+      992: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      767: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+    },
   });
 });
 
@@ -234,11 +252,15 @@ var swiper = new Swiper(".swiper", {
       slidesPerView: 3,
       spaceBetween: 40,
     },
-    768: {
+    992: {
       slidesPerView: 2,
-      spaceBetween: 30,
+      spaceBetween: 40,
     },
-    480: {
+    767: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    1: {
       slidesPerView: 1,
       spaceBetween: 20,
     },

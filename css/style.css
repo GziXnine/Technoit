@@ -665,9 +665,6 @@ header nav [id=darkmode-button]:hover {
 .testimonials {
   padding: 90px 0;
 }
-.testimonials .container {
-  padding: 0 70px;
-}
 .testimonials .container .swiper {
   position: relative;
   width: 100%;
