@@ -13,9 +13,6 @@ html {
 }
 html body {
   font-family: "Open Sans", sans-serif;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
 }
 html body a {
   color: black;
@@ -613,7 +610,7 @@ header nav [id=darkmode-button]:hover {
 }
 
 .pricing {
-  padding: 100px 0 60px;
+  padding: 100px 0 0;
 }
 .pricing .container {
   padding: 0 40px;
@@ -665,6 +662,102 @@ header nav [id=darkmode-button]:hover {
   margin: 8px auto;
 }
 
+.testimonials {
+  padding: 90px 0;
+}
+.testimonials .container {
+  padding: 0 70px;
+}
+.testimonials .container .swiper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.testimonials .container .swiper .swiper-slide .testimonial-item {
+  box-sizing: content-box;
+  padding: 30px;
+  margin: 30px 0px;
+  position: relative;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -1px 5px 20px 0px rgba(82, 90, 101, 0.1);
+  width: 345.333px;
+  margin-bottom: 30px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.testimonials .container .swiper .swiper-slide .testimonial-item:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  box-shadow: 0 1px 30px rgba(82, 90, 101, 0.1);
+  -webkit-box-shadow: 0 1px 30px rgba(82, 90, 101, 0.1);
+  -moz-box-shadow: 0 1px 30px rgba(82, 90, 101, 0.1);
+  -ms-box-shadow: 0 1px 30px rgba(82, 90, 101, 0.1);
+  -o-box-shadow: 0 1px 30px rgba(82, 90, 101, 0.1);
+}
+.testimonials .container .swiper .swiper-slide .testimonial-item .info-box {
+  min-width: 276px;
+}
+.testimonials .container .swiper .swiper-slide .testimonial-item .info-box .testimonial-img {
+  width: 90px;
+  border-radius: 50px;
+  margin-right: 15px;
+}
+.testimonials .container .swiper .swiper-slide .testimonial-item .info-box h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: #025add;
+}
+.testimonials .container .swiper .swiper-slide .testimonial-item .info-box h4 {
+  font-size: 14px;
+  color: #999;
+  margin: 0;
+}
+.testimonials .container .swiper .swiper-slide .testimonial-item .info-box .stars {
+  margin: 7px 0;
+  font-size: 15px;
+}
+.testimonials .container .swiper .swiper-slide .testimonial-item .info-box .stars .filled {
+  color: #ffc107;
+}
+.testimonials .container .swiper .swiper-slide .testimonial-item p {
+  font-size: 17px;
+  font-style: italic;
+  margin: 15px auto 15px auto;
+  color: #3a3a3a;
+}
+.testimonials .container .swiper .swiper-slide .testimonial-item p svg {
+  color: #025add;
+}
+.testimonials .container .swiper .swiper-slide .testimonial-item p svg::before {
+  content: "\f6b0";
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1.6;
+  vertical-align: -0.125em;
+  -webkit-font-smoothing: antialiased;
+}
+.testimonials .container .swiper .swiper-slide .testimonial-item p svg.fa-quote-left {
+  margin-right: 5px;
+  font-size: 20px;
+}
+.testimonials .container .swiper .swiper-slide .testimonial-item p svg.fa-quote-right {
+  margin-left: 5px;
+  font-size: 20px;
+}
+
 .status {
   padding: 130px 0;
   background: url(../images/hero-bg.png) center left;
@@ -714,6 +807,44 @@ header nav [id=darkmode-button]:hover {
 }
 .status .container .box p {
   font-size: 15px;
+}
+
+.clients {
+  padding: 100px 0;
+}
+.clients .clients-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.clients .clients-slider .swiper-wrapper {
+  display: flex;
+  transition: transform ease-in-out;
+  -webkit-transition: transform ease-in-out;
+  -moz-transition: transform ease-in-out;
+  -ms-transition: transform ease-in-out;
+  -o-transition: transform ease-in-out;
+}
+.clients .clients-slider .swiper-wrapper .swiper-slide {
+  flex: 0 0 auto;
+  width: 20%;
+  margin-right: 15px;
+}
+.clients .clients-slider .swiper-wrapper .swiper-slide img.img-fluid {
+  display: block;
+  width: 90%;
+  height: auto;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: filter 0.25s;
+  -webkit-transition: filter 0.25s;
+  -moz-transition: filter 0.25s;
+  -ms-transition: filter 0.25s;
+  -o-transition: filter 0.25s;
+}
+.clients .clients-slider .swiper-wrapper .swiper-slide:hover img.img-fluid {
+  filter: none;
+  -webkit-filter: none;
 }
 
 .team {
@@ -980,6 +1111,9 @@ footer .container .footer-text p {
   font-size: 14px;
   line-height: 2;
 }
+footer .container .footer-social-icon {
+  margin-bottom: 50px;
+}
 footer .container .footer-social-icon span {
   color: #025add;
   font-size: 20px;
@@ -992,6 +1126,9 @@ footer .container .footer-social-icon a svg {
   margin-top: 25px;
   color: white;
   font-size: 18px;
+}
+footer .container .footer-column {
+  margin-bottom: 30px;
 }
 footer .container .footer-column h3 {
   font-size: 20px;
@@ -1034,7 +1171,7 @@ footer .container .footer-widget form input {
 footer .container .footer-widget form button {
   position: absolute;
   top: 50%;
-  right: 3px;
+  right: 6px;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
