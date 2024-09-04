@@ -73,7 +73,8 @@
               <a class="nav-link" href="#">News</a>
             </li>
           </ul>
-          <button type="button" class="btn btn-primary rounded-pill get-quotes">Get Quotes</button>
+          <button type="button" class="btn btn-primary rounded-pill get-quotes"
+            onclick="scrollToSection('#contact-us')">Get Quotes</button>
           <button id="darkmode-button" class="btn rounded-circle">
             <i class="fa-solid fa-moon"></i>
           </button>
@@ -87,9 +88,6 @@
   <main>
     <div class="landing">
       <div class="overlay light"></div>
-      <div class="hero">
-        <img src="images/c30966a9e45384178fafa56353728b73-removebg-preview.png" alt="">
-      </div>
       <div id="particles-js">
         <canvas width="1170" height="2532" style="width: 100%; height: 100%;"></canvas>
       </div>
@@ -112,12 +110,10 @@
               <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             </div>
             <div class="d-flex justify-content-start buttons">
-              <button style="--ripples: 12;" href="#contact" class="btn-custom" data-aos="fade-up"
-                data-aos-delay="800">Get
-                Quotes</button>
-              <button style="--ripples: 12;" href="#services" class="btn-custom" data-aos="fade-up"
-                data-aos-delay="1000">Get
-                Started</button>
+              <button style="--ripples: 12;" class="btn-custom" data-aos="fade-up" data-aos-delay="800"
+                onclick="scrollToSection('#contact-us')">Get Quotes</button>
+              <button style="--ripples: 12;" class="btn-custom" data-aos="fade-up" data-aos-delay="1000"
+                onclick="scrollToSection('#services')">Get Started</button>
             </div>
           </div>
         </div>
@@ -352,6 +348,35 @@
       </div>
     </div>
     <!-- ! End Pricing Plan -->
+    <!-- ! Start Status -->
+    <div class="status">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12 box">
+            <img src="images/happy-clients.svg" alt="">
+            <span class="number" data-prog="232">0
+            </span>
+            <h4>Happy Clients</h4>
+            <p>consequuntur quae diredo</p>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 box">
+            <img src="images/complete-projects.svg" alt="">
+            <span class="number" data-prog="521">0
+            </span>
+            <h4>Completed Projects</h4>
+            <p>adipisci atque quia aut</p>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 box">
+            <img src="images/hours-support.svg" alt="">
+            <span class="number" data-prog="453">0
+            </span>
+            <h4>Hours Of Support</h4>
+            <p>aut commodi quaerat</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ! End Status -->
     <!-- ! Start Team -->
     <div class="team" id="team">
       <div class="header">
@@ -530,6 +555,17 @@
       </div>
     </div>
     <!-- ! End FAQ's -->
+    <!-- ! Start Discuss -->
+    <div class="discuss">
+      <div class="container">
+        <h3>Let's Discuss your Projects</h3>
+        <p>We pride ourselves with our ability to perform and deliver results. Use the form below to discuss your
+          project needs
+          with our team, we will get back asap</p>
+        <button type="submit" class="btn btn-primary rounded-pill">Contact Us</button>
+      </div>
+    </div>
+    <!-- ! End Discuss -->
     <!-- ! Start Blogs -->
     <div class="blogs" id="blogs">
       <div class="header">
@@ -664,6 +700,109 @@
     </div>
     <!-- ! End Contact Us -->
   </main>
+  <!-- ! Start Footer -->
+  <footer id="footer" class="footer-section">
+    <div class="container">
+      <div class="footer-content pt-5 pb-5">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 mb-50">
+            <div class="footer-widget">
+              <div class="footer-logo">
+                <a href="index.html" class="logo d-flex align-items-center">
+                  <img src="images/logo.png" alt="logo">
+                </a>
+              </div>
+              <div class="footer-text">
+                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec
+                  tetur adipisicing
+                  elit,Lorem ipsum dolor sit amet.</p>
+              </div>
+              <div class="footer-social-icon">
+                <span>Follow us</span><a href="https://github.com/GziXnine" target="_blank"><i
+                    class="fa-brands fa-github"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/1ahmed-allam/" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
+            <div class="service-widget footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Services</h3>
+              </div>
+              <ul class="list">
+                <li><a href="services.html">Web Design</a></li>
+                <li><a href="services.html">App Developemnt</a></li>
+                <li><a href="services.html">Cloud Services</a></li>
+                <li><a href="services.html">Domain adn Hosting</a></li>
+                <li><a href="services.html">Seo Optimization</a></li>
+                <li><a href="services.html">Social Media</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
+            <div class="service-widget footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Information</h3>
+              </div>
+              <ul class="list">
+                <li><a href="about.html">About</a></li>
+                <li><a href="packages.html">Pricing</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="porfolio.html">Portfolio</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="blogs-details.html">Blog Details</a></li>
+                <li><a href="coming-soon.html">Coming Soon</a></li>
+                <li><a href="privacy-policy.html">Terms &amp; Conditions</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+            <div class="contact-widget footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Contacts</h3>
+              </div>
+              <div class="footer-text">
+                <p><i class="fa-solid fa-location-dot"></i> 101 West Town , PBO 12345, United States</p>
+                <p><i class="fa-solid fa-phone"></i></i> +1 1234 56 789</p>
+                <p><i class="fa-solid fa-envelope"></i> contact@example.com</p>
+              </div>
+            </div>
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Newsletter</h3>
+              </div>
+              <div class="footer-text mb-25">
+                <p>Don't miss to subscribe to our new feeds, kindly fill the form below.</p>
+              </div>
+              <div class="subscribe-form">
+                <form action="#">
+                  <input type="text" placeholder="Email Address">
+                  <button><i class="fa-brands fa-telegram"></i></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 text-left text-lg-left">
+            <div class="copyright-text">
+              <p>&copy; 2024 <a href="https://github.com/GziXnine" target="_blank"><span>Allam</span></a> All Right
+                Reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ! End Footer -->
   <!---------------------------------------------------------------------------->
   <script src="js/bootstrap.bundle.min.js"></script>
   <!-- ! This Render Icon As SVG... -->

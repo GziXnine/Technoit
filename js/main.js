@@ -159,3 +159,35 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+// ! Scroll To The Section
+function scrollToSection(id) {
+  const element = document.querySelector(id);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+}
+
+// ! start count Of Stats
+let stats = document.querySelector(".status");
+let number = document.querySelectorAll(".container .box .number");
+let start = false;
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY >= stats.offsetTop - 250) {
+    if (!start) {
+      number.forEach((num) => startCount(num));
+    }
+    start = true;
+  }
+});
+
+function startCount(el) {
+  let prog = el.dataset.prog;
+  let count = setInterval(() => {
+    el.textContent++;
+    if (el.textContent == prog) {
+      clearInterval(count);
+    }
+  }, 2000 / prog);
+}
