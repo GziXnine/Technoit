@@ -400,6 +400,12 @@ header {
 
     img {
       width: 300px;
+
+      @media (min-width: 992px) {
+        animation: up-and-down calc($transition_time * 4) linear infinite;
+        -webkit-animation: up-and-down calc($transition_time * 4) linear
+          infinite;
+      }
     }
   }
 
@@ -594,6 +600,77 @@ header {
         width: fit-content;
         padding: 10px 25px;
         margin: 8px auto;
+      }
+    }
+  }
+}
+
+// ! Start Team
+.team {
+  padding: 80px 0;
+  background-color: #f8f8f8;
+
+  .container {
+    .box {
+      text-align: center;
+
+      img {
+        width: 90%;
+        border-radius: 12px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        -ms-border-radius: 12px;
+        -o-border-radius: 12px;
+        transition: calc($transition_time);
+        -webkit-transition: calc($transition_time);
+        -moz-transition: calc($transition_time);
+        -ms-transition: calc($transition_time);
+        -o-transition: calc($transition_time);
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(1.15);
+          -webkit-transform: scale(1.15);
+          -moz-transform: scale(1.15);
+          -ms-transform: scale(1.15);
+          -o-transform: scale(1.15);
+        }
+      }
+
+      h5 {
+        margin: 20px 0;
+        color: $color-primary;
+        font-weight: 500;
+      }
+
+      p {
+        margin-top: -17px;
+        font-size: 14px;
+        font-style: italic;
+        color: #3a3a3a;
+      }
+
+      .social {
+        a {
+          margin: 0 4px;
+          color: $color-primary;
+          border-radius: 50%;
+          border: 2px solid #c9c6c6;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+          padding: 4px 6px;
+          font-size: 14px;
+          transition: calc($transition_time / 2);
+          -webkit-transition: calc($transition_time / 2);
+          -moz-transition: calc($transition_time / 2);
+          -ms-transition: calc($transition_time / 2);
+          -o-transition: calc($transition_time / 2);
+          &:hover {
+            border-color: $color-primary;
+          }
+        }
       }
     }
   }

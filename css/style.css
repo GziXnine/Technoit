@@ -21,7 +21,7 @@ canvas {
 .header {
   font-family: "Poppins", sans-serif;
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 .header .title {
   color: #025add;
@@ -135,6 +135,14 @@ canvas {
     syntax: "<angle>";
     initial-value: 0deg;
     inherits: false;
+  }
+}
+@keyframes up-and-down {
+  0%, 100% {
+    top: 0;
+  }
+  50% {
+    top: -40px;
   }
 }
 * {
@@ -485,6 +493,12 @@ header nav [id=darkmode-button]:hover {
 .about-us .center img {
   width: 300px;
 }
+@media (min-width: 992px) {
+  .about-us .center img {
+    animation: up-and-down 2s linear infinite;
+    -webkit-animation: up-and-down 2s linear infinite;
+  }
+}
 .about-us .right img {
   float: left;
   margin-right: 15px;
@@ -641,6 +655,66 @@ header nav [id=darkmode-button]:hover {
   width: fit-content;
   padding: 10px 25px;
   margin: 8px auto;
+}
+
+.team {
+  padding: 80px 0;
+  background-color: #f8f8f8;
+}
+.team .container .box {
+  text-align: center;
+}
+.team .container .box img {
+  width: 90%;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  cursor: pointer;
+}
+.team .container .box img:hover {
+  transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
+}
+.team .container .box h5 {
+  margin: 20px 0;
+  color: #025add;
+  font-weight: 500;
+}
+.team .container .box p {
+  margin-top: -17px;
+  font-size: 14px;
+  font-style: italic;
+  color: #3a3a3a;
+}
+.team .container .box .social a {
+  margin: 0 4px;
+  color: #025add;
+  border-radius: 50%;
+  border: 2px solid #c9c6c6;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  padding: 4px 6px;
+  font-size: 14px;
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -ms-transition: 0.25s;
+  -o-transition: 0.25s;
+}
+.team .container .box .social a:hover {
+  border-color: #025add;
 }
 
 .faqs {
