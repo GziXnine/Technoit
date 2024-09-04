@@ -107,8 +107,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
       let allValid = true;
 
+      // Loop through both input and textarea elements
       Array.from(form.elements).forEach((element) => {
-        if (element.required && element.tagName === "INPUT") {
+        if (
+          element.required &&
+          (element.tagName === "INPUT" || element.tagName === "TEXTAREA")
+        ) {
           if (element.checkValidity()) {
             element.classList.add("is-valid");
             element.classList.remove("is-invalid");
@@ -127,18 +131,18 @@ document.addEventListener("DOMContentLoaded", function () {
           if (element.type !== "submit") {
             element.value = "";
             element.classList.remove("is-valid", "is-invalid");
-            window.location.reload();
           }
         });
         alert("Form submitted successfully!");
+        window.location.reload(); // Reload the page after successful submission
       }
     },
     false
   );
 
-  // TODO Real-time validation as the user types or changes input
+  // Real-time validation as the user types or changes input/textarea
   Array.from(form.elements).forEach((element) => {
-    if (element.tagName === "INPUT") {
+    if (element.tagName === "INPUT" || element.tagName === "TEXTAREA") {
       element.addEventListener("input", function () {
         if (element.required) {
           if (element.checkValidity()) {

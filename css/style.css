@@ -591,7 +591,7 @@ header nav [id=darkmode-button]:hover {
 }
 
 .pricing {
-  padding: 100px 0;
+  padding: 100px 0 0;
 }
 .pricing .container {
   padding: 0 40px;
@@ -643,52 +643,133 @@ header nav [id=darkmode-button]:hover {
   margin: 8px auto;
 }
 
-.contact-us {
-  padding: 100px 0;
+.faqs {
+  padding: 100px 0 0;
 }
-.contact-us .container {
+.faqs .container {
   padding: 0 40px;
 }
-.contact-us .form {
-  padding: 20px;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+.faqs .container .accordion-item {
+  overflow: hidden;
+  margin-top: 20px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  border: 1px solid rgba(221, 221, 221, 0.5764705882);
+  background-color: #f8f8f8;
+}
+.faqs .container .accordion-item .accordion-header {
+  border: none;
+  padding: 6px 0;
+}
+.faqs .container .accordion-item .accordion-header button {
+  background-color: #f8f8f8;
+  color: #025add;
+}
+.faqs .container .accordion-item .accordion-header button::after {
+  color: #025add !important;
+}
+.faqs .container .accordion-item .accordion-header button span svg {
+  padding-right: 10px;
+}
+.faqs .container .accordion-item .accordion-body {
+  border: none;
+  padding: 40px;
+  line-height: 1.8;
+}
+.faqs .accordion-button:focus,
+.faqs .accordion-button:active {
+  box-shadow: none;
+  outline: none;
+}
+
+.blogs {
+  padding: 100px 0 0;
+}
+.blogs .container {
+  padding: 0 40px;
+}
+.blogs .container .card {
+  border: 1px solid #f3f3f3;
+  margin-bottom: 20px;
   box-shadow: 0 1px 20px rgba(82, 90, 101, 0.1);
+}
+.blogs .container .card .box {
+  overflow: hidden;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+.blogs .container .card .box img {
+  width: 100%;
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
+  cursor: crosshair;
 }
-.contact-us .form:hover {
+.blogs .container .card .box img:hover {
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
 }
-.contact-us .form h2 {
-  font-size: 30px;
-  padding: 0px 10px 20px;
+.blogs .container .card .card-body {
+  padding: 20px 25px;
 }
-.contact-us .form form input,
-.contact-us .form form textarea {
+.blogs .container .card .card-body p {
+  padding: 0;
+  margin: 0;
+  color: rgba(58, 58, 58, 0.6588235294);
+}
+.blogs .container .card .card-body .card-text {
+  color: #025add;
+  padding: 10px 0;
+  font-size: 22px;
+  font-weight: 500;
+  cursor: pointer;
+  line-height: 1.2;
+}
+.blogs .container .card .card-body .card-text:hover {
+  color: #3a3a3a;
+}
+.blogs .container .card .card-body p:last-of-type {
+  font-size: 14px;
+}
+
+.contact-us {
+  padding: 100px 0;
+}
+.contact-us .container {
+  padding: 0 40px;
+}
+.contact-us form [class=input-group-text] {
+  border: 1px solid #f2f2f2;
+  background-color: #f2f2f2;
+}
+.contact-us form input,
+.contact-us form textarea {
   width: 100%;
-  padding: 10px;
-  margin: 10px 0;
   border-radius: 6px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
-  border: 1px solid #025add;
+  border: 1px solid #f2f2f2;
+  background-color: #f2f2f2;
 }
-.contact-us .form form button {
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 10px 25px;
-  margin: 8px auto;
+.contact-us form input {
+  max-height: 55px;
+}
+.contact-us form textarea {
+  resize: none;
+}
+.contact-us form button {
+  padding: 10px 30px;
 }/*# sourceMappingURL=style.css.map */

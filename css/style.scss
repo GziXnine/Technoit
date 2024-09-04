@@ -534,7 +534,7 @@ header {
 
 // ! Start Pricing Plan
 .pricing {
-  padding: 100px 0;
+  padding: 100px 0 0;
 
   .container {
     padding: 0 40px;
@@ -599,6 +599,128 @@ header {
   }
 }
 
+// ! Start FAQ's
+.faqs {
+  padding: 100px 0 0;
+
+  .container {
+    padding: 0 40px;
+
+    .accordion-item {
+      overflow: hidden;
+      margin-top: 20px;
+      border-radius: 12px;
+      -webkit-border-radius: 12px;
+      -moz-border-radius: 12px;
+      -ms-border-radius: 12px;
+      -o-border-radius: 12px;
+      border: 1px solid #dddddd93;
+      background-color: #f8f8f8;
+
+      .accordion-header {
+        border: none;
+        padding: 6px 0;
+
+        button {
+          background-color: #f8f8f8;
+          color: $color-primary;
+
+          &::after {
+            color: $color-primary !important;
+          }
+
+          span {
+            svg {
+              padding-right: 10px;
+            }
+          }
+        }
+      }
+
+      .accordion-body {
+        border: none;
+        padding: 40px;
+        line-height: 1.8;
+      }
+    }
+  }
+
+  .accordion-button:focus,
+  .accordion-button:active {
+    box-shadow: none;
+    outline: none;
+  }
+}
+
+// ! Start Blogs
+.blogs {
+  padding: 100px 0 0;
+
+  .container {
+    padding: 0 40px;
+
+    .card {
+      border: 1px solid #f3f3f3;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 20px $box-shadow-color;
+
+      .box {
+        overflow: hidden;
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+
+        img {
+          width: 100%;
+          transition: calc($transition_time);
+          -webkit-transition: calc($transition_time);
+          -moz-transition: calc($transition_time);
+          -ms-transition: calc($transition_time);
+          -o-transition: calc($transition_time);
+          cursor: crosshair;
+
+          &:hover {
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
+          }
+        }
+      }
+
+      .card-body {
+        padding: 20px 25px;
+
+        p {
+          padding: 0;
+          margin: 0;
+          color: #3a3a3aa8;
+        }
+
+        .card-text {
+          color: $color-primary;
+          padding: 10px 0;
+          font-size: 22px;
+          font-weight: 500;
+          cursor: pointer;
+          line-height: 1.2;
+
+          &:hover {
+            color: #3a3a3a;
+          }
+        }
+
+        p:last-of-type {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
 // ! Start Contact US
 .contact-us {
   padding: 100px 0;
@@ -607,52 +729,34 @@ header {
     padding: 0 40px;
   }
 
-  .form {
-    padding: 20px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    box-shadow: 0 1px 20px $box-shadow-color;
-    transition: calc($transition_time);
-    -webkit-transition: calc($transition_time);
-    -moz-transition: calc($transition_time);
-    -ms-transition: calc($transition_time);
-    -o-transition: calc($transition_time);
-
-    &:hover {
-      transform: scale(1.1);
-      -webkit-transform: scale(1.1);
-      -moz-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-      -o-transform: scale(1.1);
+  form {
+    [class="input-group-text"] {
+      border: 1px solid #f2f2f2;
+      background-color: #f2f2f2;
     }
 
-    h2 {
-      font-size: 30px;
-      padding: 0px 10px 20px;
+    input,
+    textarea {
+      width: 100%;
+      border-radius: 6px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      -ms-border-radius: 6px;
+      -o-border-radius: 6px;
+      border: 1px solid #f2f2f2;
+      background-color: #f2f2f2;
     }
 
-    form {
-      input,
-      textarea {
-        width: 100%;
-        padding: 10px;
-        margin: 10px 0;
-        border-radius: 6px;
-        -webkit-border-radius: 6px;
-        -moz-border-radius: 6px;
-        -ms-border-radius: 6px;
-        -o-border-radius: 6px;
-        border: 1px solid $color-primary;
-      }
+    input {
+      max-height: 55px;
+    }
 
-      button {
-        width: fit-content;
-        padding: 10px 25px;
-        margin: 8px auto;
-      }
+    textarea {
+      resize: none;
+    }
+
+    button {
+      padding: 10px 30px;
     }
   }
 }
