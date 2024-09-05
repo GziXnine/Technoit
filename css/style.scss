@@ -63,6 +63,10 @@ header {
 
         &:hover {
           transform: scale(1.1);
+          -webkit-transform: scale(1.1);
+          -moz-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          -o-transform: scale(1.1);
         }
       }
     }
@@ -129,9 +133,13 @@ header {
     .get-quotes {
       margin: 0 16px 0 30px !important;
       height: 45px;
-      font-weight: 500 !important;
-      font-size: 14px !important;
       padding: 0 20px;
+
+      a {
+        color: white;
+        font-weight: 600 !important;
+        font-size: 14px !important;
+      }
 
       @media (max-width: 992px) {
         margin-left: 0px !important;
@@ -1141,6 +1149,14 @@ footer {
         -ms-transition: $transition_time;
         -o-transition: $transition_time;
         margin-bottom: 30px;
+
+        &:hover {
+          transform: scale(1.1);
+          -webkit-transform: scale(1.1);
+          -moz-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          -o-transform: scale(1.1);
+        }
       }
     }
 
@@ -1188,6 +1204,10 @@ footer {
             color: white;
             font-weight: normal !important;
             font-size: 14px;
+
+            &:hover {
+              color: $color-primary;
+            }
           }
         }
       }

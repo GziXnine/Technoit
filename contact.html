@@ -90,7 +90,7 @@
       <div class="container position-relative">
         <div class="row d-flex justify-content-center">
           <div class="col-lg-6 text-center">
-            <h2>About Us</h2>
+            <h2>Contact Us</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
           </div>
         </div>
@@ -100,76 +100,86 @@
       <div class="container">
         <ol class="breadcrumb">
           <li class="breadcrumb-item Home"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">About Us</li>
+          <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
         </ol>
       </div>
     </nav>
   </div>
-  <!-- ! Start About Us -->
-  <div class="about-us" id="about-us">
+  <!-- ! Start Contact Us -->
+  <div class="contact-us" id="contact-us">
     <div class="container">
       <div class="row">
-        <div class="col-lg-4 col-sm-12 left">
-          <div class="row">
-            <div class="col-lg-12 box">
-              <div class="text">
-                <h4>Experience</h4>
-                <p>Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-              </div>
-              <img src="images/icon-1.svg" alt="">
-            </div>
-            <div class="col-lg-12 box">
-              <div class="text">
-                <h4>Products</h4>
-                <p>Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-              </div>
-              <img src="images/icon-2.svg" alt="">
-            </div>
-            <div class="col-lg-12 box">
-              <div class="text">
-                <h4>Approach</h4>
-                <p>Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-              </div>
-              <img src="images/icon-3.svg" alt="">
-            </div>
+        <div class="col-lg-4 col-sm-12">
+          <div class="address">
+            <h5>Address:</h5>
+            <p class="text-black-50 fw-normal" style="font-size: 15px; margin-bottom: 30px;">11 West Town<br>PBo
+              12345,
+              United States</p>
+          </div>
+          <div class="phone">
+            <h5>Phone:</h5>
+            <p class="text-black-50 fw-normal" style="font-size: 15px; margin-bottom: 30px;">+1 1234 56 780<br>+1
+              1234
+              56 780</p>
+          </div>
+          <div class="email">
+            <h5>Email:</h5>
+            <p class="text-black-50 fw-normal" style="font-size: 15px; margin-bottom: 30px;">
+              info@example.com<br>email@example.com</p>
           </div>
         </div>
-        <div class="col-lg-4 col-sm-12 center">
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <img src="images/features.jpg" alt="" class="middle">
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-12 right">
-          <div class="row">
-            <div class="col-lg-12 box">
-              <img src="images/icon-4.svg" alt="">
-              <div class="text">
-                <h4>Pricing</h4>
-                <p>Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        <div class="col-lg-8 col-sm-12">
+          <form id="contact-form">
+            <div class="row">
+              <!-- ! Username Field -->
+              <div class="col-lg-6 col-sm-12 mb-3">
+                <div class="input-group has-validation">
+                  <span class="input-group-text">@</span>
+                  <div class="form-floating flex-grow-1">
+                    <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username" required>
+                    <label for="floatingInputGroup1">Username</label>
+                  </div>
+                  <div class="invalid-feedback">
+                    Please Enter Your Username.
+                  </div>
+                </div>
+              </div>
+              <!-- ! Email Field -->
+              <div class="col-lg-6 col-sm-12 mb-3">
+                <div class="input-group has-validation">
+                  <div class="form-floating flex-grow-1">
+                    <input type="email" class="form-control" id="floatingInputGroup2" placeholder="Email" required>
+                    <label for="floatingInputGroup2">Email</label>
+                  </div>
+                  <div class="invalid-feedback">
+                    Please Enter Your Email.
+                  </div>
+                </div>
+              </div>
+              <!-- ! Subject Field -->
+              <div class="form-floating col-lg-12 mb-3 flex-grow-1">
+                <input type="text" class="form-control" id="floatingSubject" placeholder="Subject" required>
+                <label for="floatingSubject" class="ps-4">Subject</label>
+              </div>
+              <!-- ! Comments Field -->
+              <div class="col-lg-12 mb-3">
+                <div class="form-floating">
+                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                    style="height: 200px" required></textarea>
+                  <label for="floatingTextarea2">Comments</label>
+                </div>
+              </div>
+              <!-- ! Submit Button -->
+              <div class="col-lg-8 col-md-12">
+                <button type="submit" class="btn btn-primary rounded-pill">Send Message</button>
               </div>
             </div>
-            <div class="col-lg-12 box">
-              <img src="images/icon-5.svg" alt="">
-              <div class="text">
-                <h4>Delivery</h4>
-                <p>Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-              </div>
-            </div>
-            <div class="col-lg-12 box">
-              <img src="images/icon-6.svg" alt="">
-              <div class="text">
-                <h4>Support</h4>
-                <p>Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-              </div>
-            </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>
   </div>
-  <!-- ! End About Us -->
+  <!-- ! End Contact Us -->
   <!-- ! Start Footer -->
   <footer id="footer" class="footer-section">
     <div class="container">

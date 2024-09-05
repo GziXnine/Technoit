@@ -1,6 +1,0 @@
-# Ignore compiled CSS and related map files
-*.css
-*.css.map
-*.sass-cache/
-*.scss.map
-*.sass/
