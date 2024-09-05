@@ -164,7 +164,11 @@ canvas {
   }
 }
 .breadcrumbs {
+<<<<<<< HEAD
   height: 330px;
+=======
+  height: 50vh;
+>>>>>>> f530cbbf65607858e991aeec41d07d1c47ccca28
   background: url(../images/hero-bg.png) center center no-repeat;
   background-size: contain;
   overflow: hidden;
@@ -192,10 +196,16 @@ canvas {
   position: absolute;
   bottom: 0;
   width: 100%;
+<<<<<<< HEAD
   background-color: #025add;
 }
 .breadcrumbs nav ol {
   padding: 15px 0 4px;
+=======
+  height: 10vh;
+  background-color: #025add;
+  padding: 20px 0;
+>>>>>>> f530cbbf65607858e991aeec41d07d1c47ccca28
 }
 .breadcrumbs nav ol li.Home a {
   color: white;

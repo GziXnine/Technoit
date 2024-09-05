@@ -211,10 +211,13 @@ header nav .navbar-brand img {
 }
 header nav .navbar-brand img:hover {
   transform: scale(1.1);
+<<<<<<< HEAD
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
+=======
+>>>>>>> f530cbbf65607858e991aeec41d07d1c47ccca28
 }
 header nav .navbar-toggler {
   margin: 0 -26px 0 50px !important;
@@ -261,12 +264,18 @@ header nav .navbar-collapse ul li.dropdown ul li a:hover {
 header nav .get-quotes {
   margin: 0 16px 0 30px !important;
   height: 45px;
+<<<<<<< HEAD
   padding: 0 20px;
 }
 header nav .get-quotes a {
   color: white;
   font-weight: 600 !important;
   font-size: 14px !important;
+=======
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  padding: 0 20px;
+>>>>>>> f530cbbf65607858e991aeec41d07d1c47ccca28
 }
 @media (max-width: 992px) {
   header nav .get-quotes {
@@ -1114,6 +1123,7 @@ footer .container .footer-logo img {
   -o-transition: 0.5s;
   margin-bottom: 30px;
 }
+<<<<<<< HEAD
 footer .container .footer-logo img:hover {
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
@@ -1121,6 +1131,8 @@ footer .container .footer-logo img:hover {
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
 }
+=======
+>>>>>>> f530cbbf65607858e991aeec41d07d1c47ccca28
 footer .container .footer-text p {
   font-size: 14px;
   line-height: 2;
@@ -1157,9 +1169,12 @@ footer .container .footer-column ul li a {
   font-weight: normal !important;
   font-size: 14px;
 }
+<<<<<<< HEAD
 footer .container .footer-column ul li a:hover {
   color: #025add;
 }
+=======
+>>>>>>> f530cbbf65607858e991aeec41d07d1c47ccca28
 footer .container .footer-widget h3 {
   font-size: 20px;
   color: #025add;
