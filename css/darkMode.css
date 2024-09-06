@@ -1,0 +1,252 @@
+/** @format */
+header {
+  background-color: white !important;
+}
+header.bg-dark {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  color: white;
+}
+header.bg-dark .navbar-collapse {
+  background-color: black;
+}
+header.bg-dark .navbar-collapse ul li {
+  margin: 0;
+}
+@media (max-width: 991px) {
+  header.bg-dark .navbar-collapse ul li a {
+    color: white !important;
+  }
+}
+header.bg-dark .navbar-collapse ul li.dropdown ul {
+  background-color: black;
+}
+
+.breadcrumbs.bg-dark {
+  color: white;
+  background-color: #0d2b53 !important;
+}
+.breadcrumbs.bg-dark .text-center h2 {
+  color: #025add;
+}
+.breadcrumbs.bg-dark::before {
+  content: "";
+  opacity: 0.6;
+  background-color: #000000;
+}
+.breadcrumbs .active {
+  color: black !important;
+}
+
+.services {
+  background-color: white !important;
+}
+.services.bg-dark {
+  background-color: #202124 !important;
+}
+.services.bg-dark .container div {
+  background-color: #181818 !important;
+  border: 1px solid black;
+}
+.services.bg-dark .container div p {
+  color: white;
+}
+
+.about-us {
+  background-color: white !important;
+}
+.about-us.bg-dark {
+  background-color: #202124 !important;
+}
+.about-us.bg-dark .center img {
+  border: 3px solid black;
+}
+.about-us.bg-dark .text p,
+.about-us.bg-dark .text h4 {
+  color: white;
+}
+
+.protofolio {
+  background-color: white !important;
+}
+.protofolio.bg-dark {
+  background-color: #202124 !important;
+}
+.protofolio.bg-dark .photos .container div {
+  border: 2px solid black;
+}
+
+.pricing {
+  background-color: white !important;
+}
+.pricing.bg-dark {
+  background-color: #202124 !important;
+}
+.pricing.bg-dark .row .card {
+  background-color: #181818 !important;
+  border: 1px solid black;
+}
+.pricing.bg-dark .row .card h2,
+.pricing.bg-dark .row .card h4,
+.pricing.bg-dark .row .card li {
+  color: white;
+}
+
+.testimonials {
+  background-color: white !important;
+}
+.testimonials.bg-dark {
+  background-color: #202124 !important;
+}
+.testimonials.bg-dark .container .swiper .swiper-slide .testimonial-item {
+  background-color: #181818 !important;
+  border: 1px solid black;
+}
+.testimonials.bg-dark .container .swiper .swiper-slide .testimonial-item p {
+  color: white;
+}
+
+.clients {
+  background-color: white !important;
+}
+.clients.bg-dark {
+  background-color: black !important;
+}
+.clients.bg-dark .container .swiper .swiper-slide img {
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.team.bg-dark {
+  background-color: #202124 !important;
+}
+.team.bg-dark .container .box p {
+  color: white;
+}
+.team.bg-dark .container .box .social a {
+  color: white;
+}
+.team.bg-dark .container .box .social a:hover {
+  border-color: #025add;
+  background-color: #025add;
+}
+
+.faqs {
+  background-color: white !important;
+}
+.faqs.bg-dark {
+  background-color: #202124 !important;
+}
+.faqs.bg-dark .container .accordion-item {
+  border: 1px solid #025add;
+  background-color: #181818;
+}
+.faqs.bg-dark .container .accordion-item .accordion-header button {
+  background-color: #181818;
+  color: #025add;
+}
+.faqs.bg-dark .container .accordion-item .accordion-header button::after {
+  color: #025add !important;
+}
+.faqs.bg-dark .container .accordion-item .accordion-body {
+  color: white;
+}
+
+.privacy {
+  background-color: white !important;
+}
+.privacy.bg-dark {
+  background-color: #202124 !important;
+}
+.privacy.bg-dark p,
+.privacy.bg-dark li,
+.privacy.bg-dark h3 {
+  color: white;
+}
+
+.blogs {
+  background-color: white !important;
+}
+.blogs.bg-dark {
+  background-color: #202124 !important;
+}
+.blogs.bg-dark .container .card {
+  border-color: black;
+  background-color: #181818 !important;
+}
+.blogs.bg-dark .container .card .card-body p {
+  color: white;
+}
+.blogs.bg-dark .container .card .card-body .card-text {
+  color: #025add;
+}
+.blogs.bg-dark .container .card .card-body .card-text:hover {
+  color: white;
+}
+
+.blog-details {
+  background-color: white !important;
+}
+.blog-details.bg-dark {
+  background-color: #181818 !important;
+}
+.blog-details.bg-dark .title,
+.blog-details.bg-dark .details-post-data,
+.blog-details.bg-dark p,
+.blog-details.bg-dark h3,
+.blog-details.bg-dark li {
+  color: white !important;
+}
+.blog-details.bg-dark img {
+  border: 2px solid black;
+}
+.blog-details.bg-dark .blog-sidbar .search-form input {
+  background-color: #181818;
+}
+.blog-details.bg-dark .blog-sidbar .search-form button {
+  background-color: #025add;
+  color: #181818;
+}
+.blog-details.bg-dark .blog-sidbar .photos {
+  margin-left: -12px;
+}
+.blog-details.bg-dark .blog-sidbar .photos img {
+  border: 2px solid black;
+}
+.blog-details.bg-dark .blog-sidbar ul li a {
+  color: #025add;
+}
+.blog-details.bg-dark .blog-sidbar ul li a:hover {
+  color: white;
+}
+
+.contact-us {
+  background-color: white !important;
+}
+.contact-us.bg-dark {
+  background-color: #202124 !important;
+}
+.contact-us.bg-dark .container h5 {
+  color: white;
+}
+.contact-us.bg-dark .container p {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+.contact-us.bg-dark .container form [class=input-group-text] {
+  border: 1px solid black;
+  background-color: #181818;
+}
+.contact-us.bg-dark .container form span {
+  color: white;
+}
+.contact-us.bg-dark .container form input,
+.contact-us.bg-dark .container form textarea {
+  border: 1px solid black;
+  background-color: #181818;
+  color: white;
+}
+.contact-us.bg-dark .container form label {
+  color: white;
+}/*# sourceMappingURL=darkMode.css.map */

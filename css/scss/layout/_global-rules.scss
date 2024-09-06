@@ -27,7 +27,56 @@ html {
       padding: 0;
       margin: 0;
     }
+
+    #top {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      outline: none;
+      position: fixed;
+      top: -60px;
+      right: 25px;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      background-color: $color-primary;
+      opacity: 0.7;
+      z-index: 9999;
+      border-radius: 15px;
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      -ms-border-radius: 15px;
+      -o-border-radius: 15px;
+      transition: calc($transition_time * 2);
+      -webkit-transition: calc($transition_time * 2);
+      -moz-transition: calc($transition_time * 2);
+      -ms-transition: calc($transition_time * 2);
+      -o-transition: calc($transition_time * 2);
+
+      .top {
+        font-size: 20px;
+        color: white;
+        transition: calc($transition_time * 2);
+        -webkit-transition: calc($transition_time * 2);
+        -moz-transition: calc($transition_time * 2);
+        -ms-transition: calc($transition_time * 2);
+        -o-transition: calc($transition_time * 2);
+      }
+
+      &:hover .top {
+        transform: translateY(-4px);
+        -webkit-transform: translateY(-4px);
+        -moz-transform: translateY(-4px);
+        -ms-transform: translateY(-4px);
+        -o-transform: translateY(-4px);
+      }
+    }
   }
+}
+
+::-webkit-scrollbar {
+  width: 0;
 }
 
 canvas {

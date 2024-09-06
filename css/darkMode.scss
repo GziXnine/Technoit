@@ -7,12 +7,23 @@ header {
   &.bg-dark {
     background-color: rgba(0, 0, 0, 0.8) !important;
     color: white;
-    ul {
-      li {
-        margin: 0;
-        &.dropdown {
-          ul {
-            background-color: black;
+    .navbar-collapse {
+      background-color: black;
+
+      ul {
+        li {
+          margin: 0;
+
+          a {
+            @media (max-width: 991px) {
+              color: white !important;
+            }
+          }
+
+          &.dropdown {
+            ul {
+              background-color: black;
+            }
           }
         }
       }
