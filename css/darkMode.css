@@ -9,9 +9,6 @@ header.bg-dark {
 header.bg-dark .navbar-collapse {
   background-color: black;
 }
-header.bg-dark .navbar-collapse ul li {
-  margin: 0;
-}
 @media (max-width: 991px) {
   header.bg-dark .navbar-collapse ul li a {
     color: white !important;
