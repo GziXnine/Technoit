@@ -3,9 +3,6 @@
 // ! Import Global Rules
 @use "scss/layout/global-rules";
 
-// ! Import Pages
-@use "scss/pages/contact";
-
 // ! Import Variables
 @use "scss/variables/colors" as *;
 @use "scss/variables/times" as *;
@@ -14,7 +11,6 @@
 @use "scss/helpers/mixin" as *;
 
 // ! Import Functions
-@use "scss/helpers/functions" as *;
 @use "scss/helpers/animation" as *;
 
 * {
@@ -194,7 +190,7 @@ header {
   color: white;
 
   .overlay {
-    &.dark {
+    &.bg-dark {
       content: "";
       position: absolute;
       left: 0px;

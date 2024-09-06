@@ -1,8 +1,7 @@
 /** @format */
 
-// ! Change A Header Color
-// Array of section class names to update
 const sections = [
+  ".landing .overlay",
   ".services",
   ".about-us",
   ".protofolio",
@@ -13,10 +12,13 @@ const sections = [
   ".faqs",
   ".blogs",
   ".contact-us",
+  ".blog-details",
+  ".privacy",
+  ".breadcrumbs",
 ];
+
 // Select necessary elements
 let header = document.querySelector("header");
-let landing = document.querySelector(".landing");
 let button = document.querySelector("#darkmode-button");
 
 // Function to update header and navbar links based on the current theme
@@ -54,27 +56,43 @@ function updateHeaderAndLinks(isScrolled) {
   }
 }
 
+// Toggle the dark mode for sections
+function toggleSectionDarkMode(isDarkMode) {
+  sections.forEach((sectionClass) => {
+    const section = document.querySelector(sectionClass);
+    if (section) {
+      if (isDarkMode) {
+        section.classList.add("bg-dark");
+        section.classList.remove("light-section");
+      } else {
+        section.classList.add("light-section");
+        section.classList.remove("bg-dark");
+      }
+    }
+  });
+}
+
 // Event listener for dark mode button
 button.addEventListener("click", () => {
   const icon = button.children[0]; // Get the icon inside the button
-  const landingSection = landing.children[0]; // First child of landing section
 
   // Toggle between 'fa-moon' and 'fa-sun' icons
   icon.classList.toggle("fa-moon");
   icon.classList.toggle("fa-sun");
 
-  // Apply light or dark theme based on the icon
-  if (icon.classList.contains("fa-moon")) {
-    landingSection.classList.add("light");
-    landingSection.classList.remove("dark");
-    document.body.classList.add("light-mode");
-    document.body.classList.remove("dark-mode");
-  } else {
-    landingSection.classList.add("dark");
-    landingSection.classList.remove("light");
-    document.body.classList.add("dark-mode");
+  const isDarkMode = icon.classList.contains("fa-sun"); // Check if in dark mode (when 'fa-sun' is present)
+
+  // Apply dark mode to body and sections
+  if (isDarkMode) {
+    document.body.classList.add("bg-dark");
     document.body.classList.remove("light-mode");
+  } else {
+    document.body.classList.add("light-mode");
+    document.body.classList.remove("bg-dark");
   }
+
+  // Toggle dark mode for the sections
+  toggleSectionDarkMode(isDarkMode);
 
   // Update header and links immediately after theme change, check if user has scrolled past 100px
   updateHeaderAndLinks(window.scrollY >= 100);
