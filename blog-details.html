@@ -14,6 +14,7 @@
   <!-- ! Main Template CSS File -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/singlePage.css">
+  <link rel="stylesheet" href="css/darkMode.css">
   <!-- ! Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -90,7 +91,7 @@
       <div class="container position-relative">
         <div class="row d-flex justify-content-center">
           <div class="col-lg-6 text-center">
-            <h2>About Us</h2>
+            <h2>Blog Details</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
           </div>
         </div>
@@ -100,12 +101,13 @@
       <div class="container">
         <ol class="breadcrumb">
           <li class="breadcrumb-item Home"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">About Us</li>
+          <li class="breadcrumb-item active" aria-current="page">Blog Details</li>
         </ol>
       </div>
     </nav>
   </div>
-  <section class="single-page">
+  <!-- ! Start Blog Details -->
+  <section class="blog-details">
     <div class="container aos-init aos-animate" data-aos="fade-up">
       <div class="row">
         <div class="col-lg-8">
@@ -214,8 +216,10 @@
             aliqua.
           </p>
           <div class="d-flex justify-content-between mt-20">
-            <button type="submit" data-text="Send Message" class="fill-btn">Previos Post</button>
-            <button type="submit" data-text="Send Message" class="fill-btn">Next Post</button>
+            <button type="button" class="btn btn-primary rounded-pill get-quotes" type="submit"
+              data-text="Send Message">Previos Post</button>
+            <button type="button" class="btn btn-primary rounded-pill get-quotes" type="submit"
+              data-text="Send Message">Next Post</button>
           </div>
         </div>
         <div class="col-lg-4">
@@ -223,64 +227,66 @@
             <div class="search-form">
               <form action="#">
                 <input type="text" placeholder="Search...">
-                <button><i class="bi bi-search"></i></button>
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
               </form>
             </div>
-            <div class="row">
-              <div class="col-lg-4"><img src="images/blog-1.jpg" class="img-fluid rounded-4 mb-4" alt="">
-              </div>
-              <div class="col-lg-4"><img src="images/blog-2.jpg" class="img-fluid rounded-4 mb-4" alt="">
-              </div>
-              <div class="col-lg-4"><img src="images/blog-3.jpg" class="img-fluid rounded-4 mb-4" alt="">
-              </div>
-              <div class="col-lg-4"><img src="images/blog-4.jpg" class="img-fluid rounded-4 mb-4" alt="">
-              </div>
-              <div class="col-lg-4"><img src="images/blog-5.jpg" class="img-fluid rounded-4 mb-4" alt="">
-              </div>
-              <div class="col-lg-4"><img src="images/blog-6.jpg" class="img-fluid rounded-4 mb-4" alt="">
-              </div>
-              <div class="col-lg-4"><img src="images/blog-2.jpg" class="img-fluid rounded-4 mb-4" alt="">
-              </div>
-              <div class="col-lg-4"><img src="images/blog-4.jpg" class="img-fluid rounded-4 mb-4" alt="">
-              </div>
-              <div class="col-lg-4"><img src="images/blog-5.jpg" class="img-fluid rounded-4 mb-4" alt="">
+            <div class="container photos">
+              <div class="row">
+                <div class="col-lg-4"><img src="images/blog-1.jpg" class="img-fluid rounded-4 mb-4" alt="">
+                </div>
+                <div class="col-lg-4"><img src="images/blog-2.jpg" class="img-fluid rounded-4 mb-4" alt="">
+                </div>
+                <div class="col-lg-4"><img src="images/blog-3.jpg" class="img-fluid rounded-4 mb-4" alt="">
+                </div>
+                <div class="col-lg-4"><img src="images/blog-4.jpg" class="img-fluid rounded-4 mb-4" alt="">
+                </div>
+                <div class="col-lg-4"><img src="images/blog-5.jpg" class="img-fluid rounded-4 mb-4" alt="">
+                </div>
+                <div class="col-lg-4"><img src="images/blog-6.jpg" class="img-fluid rounded-4 mb-4" alt="">
+                </div>
+                <div class="col-lg-4"><img src="images/blog-2.jpg" class="img-fluid rounded-4 mb-4" alt="">
+                </div>
+                <div class="col-lg-4"><img src="images/blog-4.jpg" class="img-fluid rounded-4 mb-4" alt="">
+                </div>
+                <div class="col-lg-4"><img src="images/blog-5.jpg" class="img-fluid rounded-4 mb-4" alt="">
+                </div>
               </div>
             </div>
             <hr>
             <h3>Top Posts</h3>
             <ul>
-              <li><a href="#"><i class="bi bi-arrow-right-circle-fill"></i> What is web design?</a></li>
-              <li><a href="#"><i class="bi bi-arrow-right-circle-fill"></i> What is web developemnt?</a></li>
-              <li><a href="#"><i class="bi bi-arrow-right-circle-fill"></i> SEO Top 10 Tips</a></li>
-              <li><a href="#"><i class="bi bi-arrow-right-circle-fill"></i> Backend Developer skills?</a></li>
-              <li><a href="#"><i class="bi bi-arrow-right-circle-fill"></i> UI/UX Design Skill?</a></li>
-              <li><a href="#"><i class="bi bi-arrow-right-circle-fill"></i> Interview Prepartions?</a></li>
-              <li><a href="#"><i class="bi bi-arrow-right-circle-fill"></i> Frond end developer skill?</a></li>
+              <li><a href="#"><i class="fa-solid fa-circle-arrow-right"></i> What is web design?</a></li>
+              <li><a href="#"><i class="fa-solid fa-circle-arrow-right"></i> What is web developemnt?</a></li>
+              <li><a href="#"><i class="fa-solid fa-circle-arrow-right"></i> SEO Top 10 Tips</a></li>
+              <li><a href="#"><i class="fa-solid fa-circle-arrow-right"></i> Backend Developer skills?</a></li>
+              <li><a href="#"><i class="fa-solid fa-circle-arrow-right"></i> UI/UX Design Skill?</a></li>
+              <li><a href="#"><i class="fa-solid fa-circle-arrow-right"></i> Interview Prepartions?</a></li>
+              <li><a href="#"><i class="fa-solid fa-circle-arrow-right"></i> Front end developer skill?</a></li>
             </ul>
             <hr>
             <h3>Categories</h3>
             <ul>
-              <li><a href="#"><i class="bi bi-arrow-right-circle-fill"></i> Development (8083)?</a></li>
-              <li><a href="#"><i class="bi bi-arrow-right-circle-fill"></i> Design (1000)</a></li>
-              <li><a href="#"><i class="bi bi-arrow-right-circle-fill"></i> SEO Tips (909)</a></li>
-              <li><a href="#"><i class="bi bi-arrow-right-circle-fill"></i> Backend Developer (838383)</a></li>
-              <li><a href="#"><i class="bi bi-arrow-right-circle-fill"></i> UI/UX (9292)</a></li>
-              <li><a href="#"><i class="bi bi-arrow-right-circle-fill"></i> Interview Prepartions (112222)</a></li>
-              <li><a href="#"><i class="bi bi-arrow-right-circle-fill"></i> Frond end developer (10022)</a></li>
-              <li><a href="#"><i class="bi bi-arrow-right-circle-fill"></i> Development (8083)?</a></li>
-              <li><a href="#"><i class="bi bi-arrow-right-circle-fill"></i> Design (1000)</a></li>
-              <li><a href="#"><i class="bi bi-arrow-right-circle-fill"></i> SEO Tips (909)</a></li>
-              <li><a href="#"><i class="bi bi-arrow-right-circle-fill"></i> Backend Developer (838383)</a></li>
-              <li><a href="#"><i class="bi bi-arrow-right-circle-fill"></i> UI/UX (9292)</a></li>
-              <li><a href="#"><i class="bi bi-arrow-right-circle-fill"></i> Interview Prepartions (112222)</a></li>
-              <li><a href="#"><i class="bi bi-arrow-right-circle-fill"></i> Frond end developer (10022)</a></li>
+              <li><a href="#"><i class="fa-solid fa-circle-arrow-right"></i> Development (8083)?</a></li>
+              <li><a href="#"><i class="fa-solid fa-circle-arrow-right"></i> Design (1000)</a></li>
+              <li><a href="#"><i class="fa-solid fa-circle-arrow-right"></i> SEO Tips (909)</a></li>
+              <li><a href="#"><i class="fa-solid fa-circle-arrow-right"></i> Backend Developer (838383)</a></li>
+              <li><a href="#"><i class="fa-solid fa-circle-arrow-right"></i> UI/UX (9292)</a></li>
+              <li><a href="#"><i class="fa-solid fa-circle-arrow-right"></i> Interview Prepartions (112222)</a></li>
+              <li><a href="#"><i class="fa-solid fa-circle-arrow-right"></i> Front end developer (10022)</a></li>
+              <li><a href="#"><i class="fa-solid fa-circle-arrow-right"></i> Development (8083)?</a></li>
+              <li><a href="#"><i class="fa-solid fa-circle-arrow-right"></i> Design (1000)</a></li>
+              <li><a href="#"><i class="fa-solid fa-circle-arrow-right"></i> SEO Tips (909)</a></li>
+              <li><a href="#"><i class="fa-solid fa-circle-arrow-right"></i> Backend Developer (838383)</a></li>
+              <li><a href="#"><i class="fa-solid fa-circle-arrow-right"></i> UI/UX (9292)</a></li>
+              <li><a href="#"><i class="fa-solid fa-circle-arrow-right"></i> Interview Prepartions (112222)</a></li>
+              <li><a href="#"><i class="fa-solid fa-circle-arrow-right"></i> Front end developer (10022)</a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-
   </section>
+  <!-- ! End Blog Details -->
   <!-- ! Start Footer -->
   <footer id="footer" class="footer-section">
     <div class="container">
@@ -338,9 +344,8 @@
                 <li><a href="team.html">Team</a></li>
                 <li><a href="protofolio.html">Portfolio</a></li>
                 <li><a href="faqs.html">FAQs</a></li>
-                <li><a href="team.html">Team</a></li>
                 <li><a href="blogs.html">Blogs</a></li>
-                <li><a href="blogs-details.html">Blog Details</a></li>
+                <li><a href="blog-details.html">Blog Details</a></li>
                 <li><a href="coming-soon.html">Coming Soon</a></li>
                 <li><a href="privacy-policy.html">Terms &amp; Conditions</a></li>
                 <li><a href="privacy-policy.html">Privacy Policy</a></li>

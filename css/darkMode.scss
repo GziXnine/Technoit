@@ -1,0 +1,247 @@
+/** @format */
+@use "scss/variables/colors" as *;
+
+header {
+  background-color: white !important;
+
+  &.bg-dark {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    color: white;
+    ul {
+      li {
+        margin: 0;
+        &.dropdown {
+          ul {
+            background-color: black;
+          }
+        }
+      }
+    }
+  }
+}
+
+.services {
+  background-color: white !important;
+
+  &.bg-dark {
+    background-color: #202124 !important;
+
+    .container {
+      div {
+        box-shadow: 0 1px 12px rgba(0, 0, 0, 0.6);
+
+        p {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.about-us {
+  background-color: white !important;
+
+  &.bg-dark {
+    background-color: #202124 !important;
+
+    .text {
+      p,
+      h4 {
+        color: white;
+      }
+    }
+  }
+}
+
+.protofolio {
+  background-color: white !important;
+
+  &.bg-dark {
+    background-color: #202124 !important;
+  }
+}
+
+.pricing {
+  background-color: white !important;
+
+  &.bg-dark {
+    background-color: #202124 !important;
+
+    .row {
+      .card {
+        box-shadow: 0 1px 12px rgba(0, 0, 0, 0.6);
+        background-color: #202124;
+
+        h2,
+        h4,
+        li {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.testimonials {
+  background-color: white !important;
+
+  &.bg-dark {
+    background-color: #202124 !important;
+    .container {
+      .swiper {
+        .swiper-slide {
+          .testimonial-item {
+            box-shadow: 0 1px 12px rgba(0, 0, 0, 0.6);
+
+            p {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.clients {
+  background-color: white !important;
+
+  &.bg-dark {
+    background-color: black !important;
+    .container {
+      .swiper {
+        .swiper-slide {
+          img {
+            border-radius: 15px;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            -ms-border-radius: 15px;
+            -o-border-radius: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.team {
+  &.bg-dark {
+    background-color: #202124 !important;
+    .container {
+      .box {
+        p {
+          color: white;
+        }
+        .social {
+          a {
+            color: white;
+
+            &:hover {
+              border-color: $color-primary;
+              background-color: $color-primary;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.faqs {
+  background-color: white !important;
+
+  &.bg-dark {
+    background-color: #202124 !important;
+
+    .container {
+      .accordion-item {
+        border: 1px solid $color-primary;
+        background-color: #181818;
+
+        .accordion-header {
+          button {
+            background-color: #181818;
+            color: $color-primary;
+
+            &::after {
+              color: $color-primary !important;
+            }
+          }
+        }
+
+        .accordion-body {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.blogs {
+  background-color: white !important;
+
+  &.bg-dark {
+    background-color: #202124 !important;
+
+    .container {
+      .card {
+        border: none;
+        box-shadow: 0 1px 12px rgba(0, 0, 0, 0.6);
+        background-color: #202124;
+
+        .card-body {
+          p {
+            color: white;
+          }
+
+          .card-text {
+            color: $color-primary;
+
+            &:hover {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.contact-us {
+  background-color: white !important;
+
+  &.bg-dark {
+    background-color: #202124 !important;
+
+    .container {
+      h5 {
+        color: white;
+      }
+
+      p {
+        color: rgba(255, 255, 255, 0.7) !important;
+      }
+
+      form {
+        [class="input-group-text"] {
+          border: 1px solid black;
+          background-color: #181818;
+        }
+
+        span {
+          color: white;
+        }
+
+        input,
+        textarea {
+          border: 1px solid black;
+          background-color: #181818;
+        }
+
+        label {
+          color: white;
+        }
+      }
+    }
+  }
+}

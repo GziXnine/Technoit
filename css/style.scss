@@ -113,7 +113,7 @@ header {
             ul {
               li {
                 a {
-                  color: $text-color !important;
+                  color: rgba(128, 128, 128, 0.829) !important;
                   font-weight: normal !important;
                   padding: 8px 18px;
                   font-size: 14px !important;
@@ -133,7 +133,7 @@ header {
     .get-quotes {
       margin: 0 16px 0 30px !important;
       height: 45px;
-      padding: 0 20px;
+      padding: 0 18px;
 
       a {
         color: white;
@@ -318,11 +318,11 @@ header {
 
       &::before {
         left: 0;
-        bottom: 0;
+        bottom: 5px;
       }
 
       &::after {
-        top: 0;
+        top: 5px;
         right: 0;
       }
 
@@ -336,7 +336,7 @@ header {
 
         &::before,
         &::after {
-          height: 100%;
+          height: calc(100% - 10px);
         }
       }
 
@@ -410,6 +410,11 @@ header {
 
     img {
       width: 300px;
+      border-radius: 18px;
+      -webkit-border-radius: 18px;
+      -moz-border-radius: 18px;
+      -ms-border-radius: 18px;
+      -o-border-radius: 18px;
 
       @media (min-width: 992px) {
         animation: up-and-down calc($transition_time * 4) linear infinite;
@@ -647,12 +652,6 @@ header {
           -moz-transition: calc($transition_time);
           -ms-transition: calc($transition_time);
           -o-transition: calc($transition_time);
-
-          // @media (max-width: 767px) {
-          //   flex-direction: column;
-          //   min-width: 100%;
-          //   display: block;
-          // }
 
           &:hover {
             transform: scale(1.1);

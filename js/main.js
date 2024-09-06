@@ -1,47 +1,89 @@
 /** @format */
 
 // ! Change A Header Color
+// Array of section class names to update
+const sections = [
+  ".services",
+  ".about-us",
+  ".protofolio",
+  ".pricing",
+  ".testimonials",
+  ".clients",
+  ".team",
+  ".faqs",
+  ".blogs",
+  ".contact-us",
+];
+// Select necessary elements
 let header = document.querySelector("header");
 let landing = document.querySelector(".landing");
-let button = document.querySelector('[id="darkmode-button"]');
+let button = document.querySelector("#darkmode-button");
 
+// Function to update header and navbar links based on the current theme
+function updateHeaderAndLinks(isScrolled) {
+  const links = document.querySelectorAll(".navbar-nav li a");
+  const btnIcon = document.querySelector(".fa-sliders");
+
+  // Update header and links based on scroll position
+  if (isScrolled) {
+    header.classList.remove("bg-transparent");
+
+    if (button.children[0].classList.contains("fa-moon")) {
+      header.classList.add("bg-white");
+      header.classList.remove("bg-dark");
+      links.forEach((link) => {
+        link.style.color = "#3a3a3a"; // Light mode text color when scrolled
+      });
+    } else {
+      header.classList.add("bg-dark");
+      header.classList.remove("bg-white");
+      links.forEach((link) => {
+        link.style.color = "white"; // Dark mode text color when scrolled
+      });
+    }
+
+    btnIcon.style.cssText = "color: black !important"; // Button color on scroll
+  } else {
+    // Default header behavior when at the top
+    header.classList.remove("bg-white", "bg-dark");
+    header.classList.add("bg-transparent");
+    links.forEach((link) => {
+      link.style.color = "white"; // Default link color at top
+    });
+    btnIcon.style.cssText = "color: white !important"; // Button color at top
+  }
+}
+
+// Event listener for dark mode button
 button.addEventListener("click", () => {
-  const icon = button.children[0];
-  const landingSection = landing.children[0];
+  const icon = button.children[0]; // Get the icon inside the button
+  const landingSection = landing.children[0]; // First child of landing section
 
   // Toggle between 'fa-moon' and 'fa-sun' icons
   icon.classList.toggle("fa-moon");
   icon.classList.toggle("fa-sun");
 
-  // Apply the appropriate theme class based on the icon
+  // Apply light or dark theme based on the icon
   if (icon.classList.contains("fa-moon")) {
     landingSection.classList.add("light");
     landingSection.classList.remove("dark");
+    document.body.classList.add("light-mode");
+    document.body.classList.remove("dark-mode");
   } else {
     landingSection.classList.add("dark");
     landingSection.classList.remove("light");
+    document.body.classList.add("dark-mode");
+    document.body.classList.remove("light-mode");
   }
+
+  // Update header and links immediately after theme change, check if user has scrolled past 100px
+  updateHeaderAndLinks(window.scrollY >= 100);
 });
 
+// Handle header and navbar changes on scroll
 window.addEventListener("scroll", () => {
-  const links = document.querySelectorAll(".navbar-nav li a");
-  const btn = document.querySelector("#darkmode-button");
-  const btn1 = document.querySelector(".fa-sliders");
-  if (window.scrollY >= 100) {
-    header.classList.remove("bg-transparent");
-    header.classList.add("bg-white");
-    links.forEach((link) => {
-      link.style.color = "#3a3a3a";
-    });
-    btn1.style.cssText = `color: black !important`;
-  } else {
-    header.classList.remove("bg-white");
-    header.classList.add("bg-transparent");
-    links.forEach((link) => {
-      link.style.color = "white";
-    });
-    btn1.style.cssText = `color: white !important`;
-  }
+  const isScrolled = window.scrollY >= 100;
+  updateHeaderAndLinks(isScrolled);
 });
 
 // ! Protofolio
