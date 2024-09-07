@@ -329,12 +329,18 @@ header nav [id=darkmode-button] {
   margin-right: 10px;
   margin-left: 30px;
   font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav [id=darkmode-button]:hover svg {
+  color: #025add !important;
+}
+header nav [id=darkmode-button]:hover svg.fa-sun {
+  color: #ffc107 !important;
 }
 header nav [id=darkmode-button] svg {
   color: black !important;
-}
-header nav [id=darkmode-button] svg:hover {
-  color: #025add !important;
 }
 header nav [id=darkmode-button]:hover {
   background-color: #d5d5d5 !important;

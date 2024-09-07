@@ -149,13 +149,21 @@ header {
       margin-right: 10px;
       margin-left: 30px;
       font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        svg {
+          color: $color-primary !important;
+        }
+        svg.fa-sun {
+          color: #ffc107 !important;
+        }
+      }
 
       svg {
         color: black !important;
-
-        &:hover {
-          color: $color-primary !important;
-        }
       }
 
       &:hover {

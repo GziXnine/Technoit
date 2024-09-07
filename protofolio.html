@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/darkMode.css">
   <link rel="stylesheet" href="css/singlePage.css">
+  <link rel="stylesheet" href="css/aos.css">
   <!-- ! Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -91,15 +92,15 @@
       <div class="container position-relative">
         <div class="row d-flex justify-content-center">
           <div class="col-lg-6 text-center">
-            <h2>Our Portfolio</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+            <h2 data-aos="fade-up" data-aos-delay="300">Our Portfolio</h2>
+            <p data-aos="fade-up" data-aos-delay="400">Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
           </div>
         </div>
       </div>
     </div>
     <nav aria-label="breadcrumb">
       <div class="container">
-        <ol class="breadcrumb">
+        <ol class="breadcrumb" data-aos="fade-up" data-aos-delay="700">
           <li class="breadcrumb-item Home"><a href="index.html">Home</a></li>
           <li class="breadcrumb-item active" aria-current="page">Our Portfolio</li>
         </ol>
@@ -108,7 +109,8 @@
   </div>
   <!-- ! Start Protfolio -->
   <div class="protofolio" id="protofolio">
-    <div class="container">
+    <div class="container" data-aos="fade-up" data-portfolio-filter="*" data-portfolio-layout="masonry"
+      data-portfolio-sort="original-order" data-aos="fade-up" data-aos-delay="100">
       <div class="buttons">
         <button type="button" data-cat="all" class="btn btn-primary rounded-5 rounded-end active">All</button>
         <button type="button" data-cat="app-des" class="btn btn-primary rounded-0">Design</button>
@@ -118,22 +120,22 @@
       </div>
       <div class="photos">
         <div class="container">
-          <div class="photo all app-des">
+          <div class="photo all app-des" data-aos="fade-up" data-aos-delay="100">
             <img src="images/product-1.jpg" alt="">
           </div>
-          <div class="photo all app-dev">
+          <div class="photo all app-dev" data-aos="fade-up" data-aos-delay="300">
             <img src="images/product-2.jpg" alt="">
           </div>
-          <div class="photo all brand">
+          <div class="photo all brand" data-aos="fade-up" data-aos-delay="600">
             <img src="images/product-3.jpg" alt="">
           </div>
-          <div class="photo all it-sol">
+          <div class="photo all it-sol" data-aos="fade-up" data-aos-delay="100">
             <img src="images/product-4.jpg" alt="">
           </div>
-          <div class="photo all app-des">
+          <div class="photo all app-des" data-aos="fade-up" data-aos-delay="300">
             <img src="images/product-5.jpg" alt="">
           </div>
-          <div class="photo all brand">
+          <div class="photo all brand" data-aos="fade-up" data-aos-delay="800">
             <img src="images/product-6.jpg" alt="">
           </div>
         </div>
@@ -254,6 +256,7 @@
   <script src="js/all.min.js"></script>
   <!-- ! JavaScript File -->
   <script src="js/main.js"></script>
+  <script src="js/aos.js"></script>
 </body>
 
 </html>

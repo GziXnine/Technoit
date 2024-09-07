@@ -332,3 +332,15 @@ const btn = document.getElementById("top");
 window.addEventListener("scroll", () => {
   window.scrollY >= 1000 ? (btn.style.top = "93vh") : (btn.style.top = "-60px");
 });
+
+function aos_init() {
+  AOS.init({
+    duration: 1000,
+    easing: "ease-in-out",
+    once: true,
+    mirror: false,
+  });
+}
+window.addEventListener("load", () => {
+  aos_init();
+});
