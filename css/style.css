@@ -106,6 +106,7 @@ canvas {
   left: 0;
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 2000;
+  cursor: zoom-out;
 }
 
 .popUp {
@@ -120,11 +121,6 @@ canvas {
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
 }
 @media (max-width: 767px) {
   .popUp {
@@ -138,6 +134,12 @@ canvas {
   -moz-transition: 0.25s;
   -ms-transition: 0.25s;
   -o-transition: 0.25s;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  cursor: grab;
 }
 .popUp img:hover {
   transform: scale(1.1);
@@ -322,6 +324,12 @@ header nav .get-quotes a {
     margin-left: 0px !important;
   }
 }
+@media (max-width: 767px) {
+  header nav .get-quotes {
+    width: 90%;
+    margin-bottom: 10px !important;
+  }
+}
 header nav [id=darkmode-button] {
   background-color: #e4e3e3;
   width: 40px;
@@ -332,6 +340,17 @@ header nav [id=darkmode-button] {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 767px) {
+  header nav [id=darkmode-button] {
+    width: 90%;
+    border-radius: 50px !important;
+    -webkit-border-radius: 50px !important;
+    -moz-border-radius: 50px !important;
+    -ms-border-radius: 50px !important;
+    -o-border-radius: 50px !important;
+    margin-left: 0px;
+  }
 }
 header nav [id=darkmode-button]:hover svg {
   color: #025add !important;
@@ -422,6 +441,12 @@ header nav [id=darkmode-button]:hover {
 .landing .letters .social a svg {
   font-size: 14px;
   color: #025add;
+}
+@media (max-width: 767px) {
+  .landing .letters .social a svg {
+    color: white;
+    font-size: 16px;
+  }
 }
 .landing .letters .buttons button {
   padding: 15px 25px !important;
@@ -650,7 +675,7 @@ header nav [id=darkmode-button]:hover {
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
-  cursor: crosshair;
+  cursor: zoom-in;
 }
 .protofolio .photos .container div img:hover {
   transform: scale(1.1);

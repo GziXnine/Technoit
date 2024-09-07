@@ -4,13 +4,14 @@ Welcome to **Technoit**, a dynamic, multi-page application designed with modern 
 
 ## 🔥 What’s Special About Technoit?
 
-### Key Features:
-- **⚡️ Dynamic Multi-Page Layout**: Seamless navigation across multiple pages, offering a smooth user experience.
-- **💻 Fully Responsive Design**: Ensures a great experience across devices, from desktops to mobile phones.
-- **🌗 Light/Dark Mode Toggle**: Switch between light and dark themes for better accessibility and user customization.
-- **🎨 Canvas API Integration**: Utilizing the Canvas API to create custom graphical elements and effects.
-- **🎞️ Smooth Animations**: Sleek transitions and animations for a more dynamic and engaging user interface.
-- **🛠️ Custom Functions**: Includes `practice.js` and other smooth custom functions to enhance user interaction.
+## Key Features:
+⚡️ **Dynamic Multi-Page Layout**: Seamless navigation across multiple pages, offering a smooth and intuitive user experience.  
+💻 **Fully Responsive Design**: Guarantees an excellent experience across all devices, from large desktops to small mobile screens.  
+🌗 **Light/Dark Mode Toggle**: Easily switch between light and dark themes, enhancing accessibility and personalization.  
+🎨 **Canvas API Integration**: Harnesses the power of the Canvas API to create custom graphical elements and interactive effects.  
+🎞️ **Smooth Animations**: Features sleek transitions and animations for a dynamic and visually engaging interface.  
+🛠️ **Custom Functions**: Includes `particles.js` and other optimized custom functions to improve interactivity and user engagement.  
+🌊 **Swiper Functionality**: Integrated swiper functionality for touch-friendly, smooth transitions between content slides. Ideal for image galleries and carousels.
 
 ## 📸 Preview
 

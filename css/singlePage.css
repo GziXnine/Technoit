@@ -106,6 +106,7 @@ canvas {
   left: 0;
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 2000;
+  cursor: zoom-out;
 }
 
 .popUp {
@@ -120,11 +121,6 @@ canvas {
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
 }
 @media (max-width: 767px) {
   .popUp {
@@ -138,6 +134,12 @@ canvas {
   -moz-transition: 0.25s;
   -ms-transition: 0.25s;
   -o-transition: 0.25s;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  cursor: grab;
 }
 .popUp img:hover {
   transform: scale(1.1);

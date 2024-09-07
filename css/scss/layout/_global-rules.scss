@@ -114,6 +114,7 @@ canvas {
   left: 0;
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 2000;
+  cursor: zoom-out;
 }
 
 .popUp {
@@ -128,11 +129,6 @@ canvas {
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
 
   @media (max-width: 767px) {
     width: 370px;
@@ -145,6 +141,12 @@ canvas {
     -moz-transition: calc($transition_time / 2);
     -ms-transition: calc($transition_time / 2);
     -o-transition: calc($transition_time / 2);
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    cursor: grab;
 
     &:hover {
       transform: scale(1.1);
